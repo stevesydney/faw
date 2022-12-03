@@ -10,15 +10,15 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main>
 
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'faw' ); ?></h1>
-			</header><!-- .page-header -->
+		<section>
+			<header>
+				<h1><?php esc_html_e( 'That page doesn&rsquo;t exist. It&rsquo;s probably your fault.', 'faw' ); ?></h1>
+			</header>
 
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'faw' ); ?></p>
+			<div>
+				<p><?php esc_html_e( 'Search?', 'faw' ); ?></p>
 
 					<?php
 					get_search_form();
@@ -26,8 +26,8 @@ get_header();
 					the_widget( 'WP_Widget_Recent_Posts' );
 					?>
 
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'faw' ); ?></h2>
+					<div>
+						<h2><?php esc_html_e( 'Most Used Categories', 'faw' ); ?></h2>
 						<ul>
 							<?php
 							wp_list_categories(
@@ -41,7 +41,7 @@ get_header();
 							);
 							?>
 						</ul>
-					</div><!-- .widget -->
+					</div>
 
 					<?php
 					/* translators: %1$s: smiley */
@@ -51,10 +51,10 @@ get_header();
 					the_widget( 'WP_Widget_Tag_Cloud' );
 					?>
 
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
+			</div>
+		</section>
 
-	</main><!-- #main -->
+	</main>
 
 <?php
 get_footer();
