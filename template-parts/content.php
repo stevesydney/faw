@@ -9,18 +9,25 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header>
+<?php
+	$post_class = 'article-container';
+	if ( is_home() ) :
+		$post_class = 'article-container-home';
+	endif;
+?>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class($post_class); ?>>
+	<header class="article-header">
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1>', '</h1>' );
+			the_title( '<h1 class="article-title">', '</h1>' );
 		else :
-			the_title( '<h2><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h2 class="article-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) :
 			?>
-			<div>
+			<div class="article-meta">
 				<?php
 				faw_posted_on();
 				faw_posted_by();
@@ -31,7 +38,7 @@
 
 	<?php faw_post_thumbnail(); ?>
 
-	<div>
+	<div class="article-content">
 		<?php
 		the_content(
 			sprintf(

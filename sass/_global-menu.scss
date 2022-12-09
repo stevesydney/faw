@@ -1,0 +1,21 @@
+.global-menu {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.global-menu .page_item {
+    font-family: var(--font-sans-serif);
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.global-menu .page_item > a {
+    display: block;
+    text-align: right;
+    line-height: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+}

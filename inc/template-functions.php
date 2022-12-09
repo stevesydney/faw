@@ -35,3 +35,11 @@ function faw_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'faw_pingback_header' );
+
+/**
+ * Custom Read More link
+ */
+function custom_read_more_link() {
+    return '<a class="article-more-link" href="' . get_permalink() . '">Read more</a>';
+}
+add_filter( 'the_content_more_link', 'custom_read_more_link' );

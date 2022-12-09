@@ -19,11 +19,6 @@
 				printf( esc_html__( 'Proudly powered by %s', 'faw' ), 'WordPress' );
 				?>
 			</a>
-			<span> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'faw' ), 'faw', '<a href="http://fasterandworse.com">Stephen Farrugia</a>' );
-				?>
 		</div>
 	</footer>
 </div>

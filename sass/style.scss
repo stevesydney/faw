@@ -21,6 +21,51 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+@charset "UTF-8";
+
+/* Fonts
+--------------------------------------------- */
+@import "fonts";
+
+/* Variables
+--------------------------------------------- */
+@import "vars";
+
+/* All
+--------------------------------------------- */
+@import "all";
+
+/* Root
+--------------------------------------------- */
+@import "root";
+@import "body";
+
+/* Elements
+--------------------------------------------- */
+@import "a";
+
+/* Utilities
+--------------------------------------------- */
+@import "hide-visual";
+
+/* Global
+--------------------------------------------- */
+@import "global-main-container";
+@import "global-header";
+@import "global-brand";
+@import "global-menu";
+@import "global-description";
+@import "global-main";
+@import "global-sidebar";
+
+/* Article
+--------------------------------------------- */
+@import "article-title";
+@import "article-date";
+@import "article-author";
+@import "article-content";
+@import "article-container";
+@import "article-container-home";
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -51,7 +96,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 
 // Import variables and mixins.
-@import "abstracts/abstracts";
+//@import "abstracts/abstracts";
 
 /*--------------------------------------------------------------
 # Generic
@@ -59,20 +104,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* Fonts
 --------------------------------------------- */
-@import "generic/fonts";
+//@import "generic/fonts";
 
 /* Normalize
 --------------------------------------------- */
-@import "generic/normalize";
+//@import "generic/normalize";
 
 /* Box sizing
 --------------------------------------------- */
-@import "generic/box-sizing";
+//@import "generic/box-sizing";
 
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
-@import "base/base";
+//@import "base/base";
 
 /*--------------------------------------------------------------
 # Layouts
@@ -83,7 +128,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
-@import "components/components";
+//@import "components/components";
 
 /*--------------------------------------------------------------
 # Plugins
@@ -91,7 +136,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* Jetpack infinite scroll
 --------------------------------------------- */
-@import "plugins/jetpack/infinite-scroll";
+//@import "plugins/jetpack/infinite-scroll";
 
 /*--------------------------------------------------------------
 # Utilities
@@ -99,8 +144,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* Accessibility
 --------------------------------------------- */
-@import "utilities/accessibility";
+//@import "utilities/accessibility";
 
 /* Alignments
 --------------------------------------------- */
-@import "utilities/alignments";
+//@import "utilities/alignments";

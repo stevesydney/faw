@@ -9,8 +9,9 @@
 
 get_header();
 ?>
+<div class="global-main-container">
 
-	<main>
+	<main id="primary" class="global-main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -50,4 +51,7 @@ get_header();
 
 <?php
 get_sidebar();
+?>
+</div>
+<?php
 get_footer();

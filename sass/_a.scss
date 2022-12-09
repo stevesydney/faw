@@ -1,0 +1,27 @@
+a {
+    text-decoration: none;
+  }
+  
+  a:link {
+    color: var(--colour-link);
+    text-decoration: underline;
+  }
+  
+  a:visited {
+    color: var(--colour-link-visited);
+  }
+  
+  a:focus {
+    color: var(--colour-link-focus);
+    text-decoration: underline;
+    outline-color: var(--colour-fg-base);
+  }
+  
+  a:hover {
+    color: var(--colour-link-hover);
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: var(--colour-link-active);
+  }

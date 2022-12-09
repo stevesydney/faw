@@ -1,0 +1,45 @@
+// https://coolors.co/170003-55000c-f2f2d9-adb262-69c14c
+
+:root {
+    --max-readable-width: 34rem;
+    --max-content-width: 50rem;
+    --font-sans-serif: "Barlow", "Helvetica Neue", Helvetica, "Arimo", Arial, sans-serif;
+    --font-serif: "Redaction", "Times New Roman", "Tinos", Times, serif;
+    --gutter: 1rem;
+    --large-gutter: 2rem;
+    --margin-small: 0.3rem;
+    --margin: 1rem;
+    --margin-large: 2.5rem;
+
+    --colour-highlight: rgb(47,116,60);
+    --colour-bg-base: rgb(230,230,230);
+    --colour-bg-base-mid: rgba(0,0,0,0.1);
+    --colour-fg-base: rgb(25,25,25);
+    --colour-link: rgb(25,25,25);
+    --colour-link-hover: rgb(25,25,25);
+    --colour-link-focus: var(--colour-highlight);
+    --colour-link-visited: rgb(25,25,25);
+    --colour-link-active: rgb(25,25,25);
+
+    --hyphens: none;
+    --text-align: left;
+    --body-font-family: var(--font-serif);
+    --body-font-size: 1rem;
+    --body-line-height: 1.6;
+    --link-decoration: underline;
+    --link-decoration-hover: none;
+}
+
+// @media (prefers-color-scheme: dark) {
+//     :root:not([data-theme-preference]) {
+//         --colour-highlight: rgb(77,153,92);
+//         --colour-bg-base: rgb(25,25,25);
+//         --colour-bg-base-mid: rgba(255,255,255,0.1);
+//         --colour-fg-base: rgb(230,230,230);
+//         --colour-link: rgb(230,230,230);
+//         --colour-link-hover: rgb(230,230,230);
+//         --colour-link-focus: var(--colour-highlight);
+//         --colour-link-visited: rgb(230,230,230);
+//         --colour-link-active: rgb(230,230,230);
+//     }
+// }
