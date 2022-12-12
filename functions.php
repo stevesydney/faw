@@ -175,3 +175,9 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+function wpassist_remove_css(){
+    wp_dequeue_style( 'wp-block-library' );
+	wp_dequeue_style( 'classic-theme-styles' );
+} 
+add_action( 'wp_enqueue_scripts', 'wpassist_remove_css' );

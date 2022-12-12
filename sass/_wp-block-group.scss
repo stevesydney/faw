@@ -1,0 +1,24 @@
+.wp-block-group {
+
+}
+
+.wp-block-group h2 {
+    font-family: var(--font-sans-serif);
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-bottom: var(--margin-small);
+}
+
+.wp-block-group ol,
+.wp-block-group ul {
+    font-size: 0.8rem;
+    padding-left: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.wp-block-group li {
+    font-size: inherit;
+}
+

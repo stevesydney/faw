@@ -64,7 +64,7 @@
 		?>
 	</div>
 
-	<footer>
+	<footer class="article-footer">
 		<?php faw_entry_footer(); ?>
 	</footer>
 </article><!-- #post-<?php the_ID(); ?> -->

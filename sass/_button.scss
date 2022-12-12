@@ -1,0 +1,20 @@
+input[type=button],
+button {
+    font-family: var(--font-sans-serif);
+    font-weight: 400;
+    font-size: 0.8rem;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid var(--colour-fg-base);
+    color: var(--color-fg-base);
+    background-color: transparent;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.8rem;
+}

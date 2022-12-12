@@ -43,6 +43,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Elements
 --------------------------------------------- */
 @import "a";
+@import "input";
+@import "button";
 
 /* Utilities
 --------------------------------------------- */
@@ -66,6 +68,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "article-content";
 @import "article-container";
 @import "article-container-home";
+@import "article-modified";
+@import "article-published";
+@import "article-footer";
+
+/* Wordpress Widgets
+--------------------------------------------- */
+@import "wp-widget_block";
+@import "wp-block-search";
+@import "wp-block-group";
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
