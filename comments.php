@@ -20,27 +20,27 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div>
+<div id="comments" class="article-comments">
 
 	<?php
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) :
 		?>
-		<h2>
+		<h2 class="article-comments-title">
 			<?php
 			$faw_comment_count = get_comments_number();
 			if ( '1' === $faw_comment_count ) {
 				printf(
 					/* translators: 1: title. */
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'faw' ),
-					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
+					esc_html__( 'One comment on &ldquo;%1$s&rdquo;', 'faw' ),
+					wp_kses_post( get_the_title() )
 				);
 			} else {
 				printf( 
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $faw_comment_count, 'comments title', 'faw' ) ),
+					esc_html( _nx( '%1$s comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', $faw_comment_count, 'comments title', 'faw' ) ),
 					number_format_i18n( $faw_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
+					wp_kses_post( get_the_title() )
 				);
 			}
 			?>
@@ -48,12 +48,14 @@ if ( post_password_required() ) {
 
 		<?php the_comments_navigation(); ?>
 
-		<ol>
+		<ol class="article-comments-list">
 			<?php
 			wp_list_comments(
 				array(
-					'style'      => 'ol',
-					'short_ping' => true,
+					'style'      	=> 'ol',
+					'short_ping' 	=> true,
+					'avatar_size'	=> 0,
+					'max_depth'		=> 1
 				)
 			);
 			?>

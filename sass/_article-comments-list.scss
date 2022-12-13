@@ -1,0 +1,45 @@
+.article-comments-list,
+.article-comments-list ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.article-comments-list {
+    padding-left: 0;
+}
+
+.article-comments-list ol {
+    padding-left: var(--margin);
+    border-left: 1px solid var(--colour-fg-base);
+}
+
+.article-comments-list .comment {
+
+}
+
+.article-comments-list .comment .comment-content {
+    font-size: 0.8rem;
+    padding-top: var(--margin-small);
+}
+
+.article-comments-list .comment .comment-content p {
+    margin-top: 0;
+    margin-bottom: var(--margin);
+}
+
+.article-comments-list .comment .comment-author {
+    font-family: var(--font-sans-serif);
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.article-comments-list .comment .comment-author .fn {
+    font-weight: 400;
+}
+
+.article-comments-list .comment .comment-metadata {
+    font-family: var(--font-sans-serif);
+    font-weight: 400;
+    font-size: 0.6rem;
+}
