@@ -1,4 +1,5 @@
 input[type=button],
+input[type=submit],
 button {
     font-family: var(--font-sans-serif);
     font-weight: 400;
@@ -6,8 +7,8 @@ button {
     appearance: none;
     -webkit-appearance: none;
     border: 1px solid var(--colour-fg-base);
-    color: var(--color-fg-base);
-    background-color: transparent;
+    color: var(--colour-bg-base);
+    background-color: var(--colour-fg-base);
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 0;

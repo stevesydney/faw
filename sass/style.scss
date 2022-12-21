@@ -44,6 +44,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------- */
 @import "a";
 @import "input";
+@import "textarea";
 @import "button";
 
 /* Utilities
@@ -81,6 +82,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "wp-widget_block";
 @import "wp-block-search";
 @import "wp-block-group";
+@import "wp-comment-form";
+@import "wp-post-navigation";
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:

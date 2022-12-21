@@ -10,21 +10,82 @@
 }
 
 .article-comments-list ol {
-    padding-left: var(--margin);
-    border-left: 1px solid var(--colour-fg-base);
+    padding-left: var(--margin-small);
+    border-left: 1px solid var(--colour-bg-base-mid);
+    position: relative;
+    padding-bottom: var(--margin-small);
+    margin-bottom: var(--margin-small);
+    &::after {
+        content: "";
+        position: absolute;
+        width: var(--margin);
+        height: 1px;
+        left: 0;
+        bottom: 0;
+        background: linear-gradient(90deg, var(--colour-bg-base-mid) 0%, transparent 100%);
+        //background-color: var(--colour-bg-base-mid);
+    }
 }
 
-.article-comments-list .comment {
+.article-comments-list > .comment > ol > .comment > .comment-respond {
+    margin-left: calc(-1px - var(--margin-small));
+}
 
+.article-comments-list > .comment > ol > .comment > ol > .comment > .comment-respond {
+    margin-left: calc((-1px - var(--margin-small)) * 2);
+}
+
+.article-comments-list > .comment > ol > .comment > ol > .comment > ol > .comment > .comment-respond {
+    margin-left: calc((-1px - var(--margin-small)) * 3);
+}
+
+.article-comments-list > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > .comment-respond {
+    margin-left: calc((-1px - var(--margin-small)) * 4);
+}
+
+.article-comments-list > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > .comment-respond {
+    margin-left: calc((-1px - var(--margin-small)) * 5);
+}
+
+.article-comments-list > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > .comment-respond {
+    margin-left: calc((-1px - var(--margin-small)) * 6);
+}
+
+.article-comments-list > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > .comment-respond {
+    margin-left: calc((-1px - var(--margin-small)) * 7);
+}
+
+.article-comments-list > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > .comment-respond {
+    margin-left: calc((-1px - var(--margin-small)) * 8);
+}
+
+.article-comments-list > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > .comment-respond {
+    margin-left: calc((-1px - var(--margin-small)) * 9);
+}
+
+.article-comments-list > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > .comment-respond {
+    margin-left: calc((-1px - var(--margin-small)) * 10);
+}
+
+.article-comments-list .comment:not(:last-of-type) {
+    margin-bottom: var(--margin);
+}
+
+.article-comments-list .comment .comment-body {
+    margin-bottom: var(--margin-small);
 }
 
 .article-comments-list .comment .comment-content {
     font-size: 0.8rem;
     padding-top: var(--margin-small);
+    margin-bottom: var(--margin-small);
 }
 
 .article-comments-list .comment .comment-content p {
     margin-top: 0;
+    margin-bottom: 0;
+}
+.article-comments-list .comment .comment-content p:not(:last-of-type) {
     margin-bottom: var(--margin);
 }
 
@@ -42,4 +103,25 @@
     font-family: var(--font-sans-serif);
     font-weight: 400;
     font-size: 0.6rem;
+    opacity: 0.6;
+}
+
+.article-comments-list .comment .comment-reply-link {
+    font-family: var(--font-sans-serif);
+    font-weight: 400;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    line-height: 1.2rem;
+}
+
+.article-comments-list .comment .reply {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.article-comments-list .comment .reply::before {
+    font-size: 0.8rem;
+    content: "💬";
+    margin-right: var(--margin-small);
+    line-height: 1.2rem;
 }

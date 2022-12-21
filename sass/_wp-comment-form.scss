@@ -1,0 +1,70 @@
+.comment-respond {
+    padding-top: var(--margin);
+    padding-bottom: var(--margin);
+    background-color: var(--colour-bg-base);
+}
+
+.comment-reply-title {
+    font-family: var(--font-sans-serif);
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-bottom: var(--margin);
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-reply-title small {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.comment-notes,
+.logged-in-as {
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-bottom: var(--margin);
+}
+
+.comment-form-comment {
+    margin-top: 0;
+    margin-bottom: var(--margin);
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+    margin-top: 0;
+    margin-bottom: var(--margin);
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+[class^=comment-form-] label {
+    font-family: var(--font-sans-serif);
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-bottom: var(--margin-small);
+}
+
+.comment-form-comment textarea,
+.comment-form-author input,
+.comment-form-email input,
+.comment-form-url input {
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.comment-form-cookies-consent {
+    margin-top: 0;
+    margin-bottom: var(--margin);
+}
+
+.comment-form-cookies-consent input[type=checkbox] {
+    margin-bottom: var(--margin-small);
+    margin-right: var(--margin-small);
+}
