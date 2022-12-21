@@ -1,0 +1,13 @@
+.global-footer-link {
+    font-family: var(--font-sans-serif);
+    font-size: 0.8rem;
+    margin-right: var(--margin);
+}
+
+.global-footer-link:not(:last-of-type)::after {
+    content: "/";
+    font-family: inherit;
+    font-size: inherit;
+    margin-left: var(--margin);
+    color: var(--colour-fg-base-mid);
+}

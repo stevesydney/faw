@@ -6,6 +6,7 @@ button {
     font-size: 0.8rem;
     appearance: none;
     -webkit-appearance: none;
+    border-radius: 0;
     border: 1px solid var(--colour-fg-base);
     color: var(--colour-bg-base);
     background-color: var(--colour-fg-base);

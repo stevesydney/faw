@@ -21,6 +21,8 @@
 
 .comment-notes,
 .logged-in-as {
+    font-family: var(--font-sans-serif);
+    font-weight: 400;
     font-size: 0.8rem;
     margin-top: 0;
     margin-bottom: var(--margin);
@@ -67,4 +69,12 @@
 .comment-form-cookies-consent input[type=checkbox] {
     margin-bottom: var(--margin-small);
     margin-right: var(--margin-small);
+}
+
+.akismet_comment_form_privacy_notice {
+    font-family: var(--font-sans-serif);
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-bottom: var(--margin);
 }

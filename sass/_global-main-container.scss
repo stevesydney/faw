@@ -1,3 +1,7 @@
+.global-main-container {
+    margin-bottom: var(--margin);
+}
+
 @media (min-width: 800px) {
     .global-main-container {
         display: flex;

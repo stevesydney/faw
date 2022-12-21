@@ -32,7 +32,7 @@
 		<div class="global-brand">
 			<div class="global-logo" aria-hidden="true" focusable="false">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" aria-hidden="true" focusable="false">
-					<svg aria-hidden="true" focusable="false" viewBox="0 0 151 101" width="151" height="101" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
+					<svg aria-hidden="true" focusable="false" viewBox="0 0 151 101" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
 						<title><?php bloginfo( 'name' ); ?></title>
 						<path style="fill:#08f" d="M4133.59 283.592h336.798V620.39H4133.59z" transform="matrix(-.0052 .08114 -.414 -.02651 280.13414572 -318.96382863)"/>
 						<path d="M4341.34 755.086v42.336h84.96v38.016h-84.96v83.232h-41.47v-201.6h136.22v38.016h-94.75Z" style="fill:#fff;fill-rule:nonzero" transform="matrix(.08504 .00545 -.00545 .08504 -244.06186806 -71.81144381)"/>
@@ -44,11 +44,13 @@
 				</a>
 			</div>
 			<?php
+				$descClass = 'global-description';
 				if ( is_front_page() && is_home() ) :
 			?>
 			<h1 class="hide-visual"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php
 				else :
+					$descClass = $descClass . " hide-visual";
 			?>
 			<p class="hide-visual"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 			<?php
@@ -56,7 +58,7 @@
 				$faw_description = get_bloginfo( 'description', 'display' );
 				if ( $faw_description || is_customize_preview() ) :
 			?>
-			<p class="global-description"><?php echo $faw_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+			<p class="<?php echo $descClass; ?>"><?php echo $faw_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 		</div>
 
