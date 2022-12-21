@@ -31,7 +31,7 @@
 		?>
 		<div class="global-brand">
 			<div class="global-logo" aria-hidden="true" focusable="false">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" aria-hidden="true" focusable="false">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" aria-hidden="true" focusable="false" tabindex="-1">
 					<svg aria-hidden="true" focusable="false" viewBox="0 0 151 101" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
 						<title><?php bloginfo( 'name' ); ?></title>
 						<path style="fill:#08f" d="M4133.59 283.592h336.798V620.39H4133.59z" transform="matrix(-.0052 .08114 -.414 -.02651 280.13414572 -318.96382863)"/>
