@@ -36,7 +36,7 @@
 		<?php endif; ?>
 	</header>
 
-	<?php faw_post_thumbnail(); ?>
+	<?php //faw_post_thumbnail(); ?>
 
 	<div class="article-content">
 		<?php

@@ -75,8 +75,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--margin: 1rem;
 	--margin-large: 2.5rem;
 	--colour-highlight: rgb(47,116,60);
-	--colour-bg-base: rgb(230,230,230);
-	--colour-bg-base-mid: rgb(213,213,213);
+	--colour-bg-base: rgb(255,255,255);
+	--colour-bg-base-mid: rgb(238,238,238);
 	--colour-fg-base: rgb(25,25,25);
 	--colour-fg-base-mid: rgb(42,42,42);
 	--colour-link: rgb(25,25,25);
