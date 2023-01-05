@@ -35,26 +35,25 @@
     position: relative;
     animation-delay: 0ms;
     animation-direction: alternate;
-    animation-duration: var(--hue-animation-duration), calc(var(--hue-animation-duration) / 2);
-    animation-timing-function: linear;
+    animation-duration: var(--hue-animation-duration);
+    animation-timing-function: ease-in-out;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
-    animation-name: hues, saturationsA;
     animation-play-state: running;
-    background-color: currentColor;
+    background-color: hsl(208, 100%, 50%);
     transform-origin: 50%;
 }
 
 .global-logo-bar-1 {
-    animation-name: hues, saturationsA, transformsA;
+    animation-name: saturationsA, transformsA;
 }
 
 .global-logo-bar-2 {
-    animation-name: hues, saturationsB, transformsB;
+    animation-name: saturationsB, transformsB;
 }
 
 .global-logo-bar-3 {
-    animation-name: hues, saturationsC;
+    animation-name: saturationsC, transformsC;
 }
   
 .global-logo-letter {

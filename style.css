@@ -64,45 +64,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* Keyframes
 --------------------------------------------- */
-@keyframes hues {
-	0% {
-		color: #0080ff;
-	}
-	9.090909090909091% {
-		color: blue;
-	}
-	18.181818181818182% {
-		color: #00ff80;
-	}
-	27.272727272727273% {
-		color: #8000ff;
-	}
-	36.363636363636364% {
-		color: magenta;
-	}
-	45.454545454545455% {
-		color: yellow;
-	}
-	54.545454545454545% {
-		color: #ff0080;
-	}
-	63.636363636363636% {
-		color: #80ff00;
-	}
-	72.727272727272727% {
-		color: red;
-	}
-	81.818181818181818% {
-		color: red;
-	}
-	90.909090909090909% {
-		color: #ff8000;
-	}
-	100% {
-		color: lime;
-	}
-}
-
 @keyframes saturationsA {
 	0% {
 		filter: saturate(70%) brightness(1);
@@ -111,7 +72,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		filter: saturate(90%) brightness(1);
 	}
 	40% {
-		filter: saturate(30%) brightness(1.25);
+		filter: saturate(40%) brightness(1.25);
 	}
 	60% {
 		filter: saturate(60%) brightness(1.1);
@@ -132,7 +93,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		filter: saturate(70%) brightness(1);
 	}
 	40% {
-		filter: saturate(10%) brightness(1.25);
+		filter: saturate(20%) brightness(1.25);
 	}
 	60% {
 		filter: saturate(80%) brightness(1.01);
@@ -208,6 +169,27 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	}
 }
 
+@keyframes transformsC {
+	0% {
+		transform: translateX(8%) translateY(9%) rotate(-6deg);
+	}
+	20% {
+		transform: translateX(-7%) translateY(-10%) rotate(3deg);
+	}
+	40% {
+		transform: translateX(2%) translateY(2%) rotate(1deg);
+	}
+	60% {
+		transform: translateX(6%) translateY(5%) rotate(10deg);
+	}
+	80% {
+		transform: translateX(10%) translateY(-7%) rotate(-2deg);
+	}
+	100% {
+		transform: translateX(-4%) translateY(-9%) rotate(-10deg);
+	}
+}
+
 /* Variables
 --------------------------------------------- */
 :root {
@@ -237,7 +219,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--body-line-height: 1.6;
 	--link-decoration: underline;
 	--link-decoration-hover: none;
-	--hue-animation-duration: 100000ms;
+	--hue-animation-duration: 48000ms;
 }
 
 /* All
@@ -516,26 +498,25 @@ button {
 	position: relative;
 	animation-delay: 0ms;
 	animation-direction: alternate;
-	animation-duration: var(--hue-animation-duration), calc(var(--hue-animation-duration) / 2);
-	animation-timing-function: linear;
+	animation-duration: var(--hue-animation-duration);
+	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
 	animation-iteration-count: infinite;
-	animation-name: hues, saturationsA;
 	animation-play-state: running;
-	background-color: currentColor;
+	background-color: #0088ff;
 	transform-origin: 50%;
 }
 
 .global-logo-bar-1 {
-	animation-name: hues, saturationsA, transformsA;
+	animation-name: saturationsA, transformsA;
 }
 
 .global-logo-bar-2 {
-	animation-name: hues, saturationsB, transformsB;
+	animation-name: saturationsB, transformsB;
 }
 
 .global-logo-bar-3 {
-	animation-name: hues, saturationsC;
+	animation-name: saturationsC, transformsC;
 }
 
 .global-logo-letter {

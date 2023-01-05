@@ -1,41 +1,41 @@
-@keyframes hues {
-    0% {
-        color: hsl(210, 100%, 50%);
-    }
-    9.090909090909091% {
-        color: hsl(240, 100%, 50%);
-    }
-    18.181818181818182% {
-        color: hsl(150, 100%, 50%);
-    }
-    27.272727272727273% {
-        color: hsl(270, 100%, 50%);
-    }
-    36.363636363636364% {
-        color: hsl(300, 100%, 50%);
-    }
-    45.454545454545455% {
-        color: hsl(60, 100%, 50%);
-    }
-    54.545454545454545% {
-        color: hsl(330, 100%, 50%);
-    }
-    63.636363636363636% {
-        color: hsl(90, 100%, 50%);
-    }
-    72.727272727272727% {
-        color: hsl(360, 100%, 50%);
-    }
-    81.818181818181818% {
-        color: hsl(0, 100%, 50%);
-    }
-    90.909090909090909% {
-        color: hsl(30, 100%, 50%);
-    }
-    100% {
-        color: hsl(120, 100%, 50%);
-    }
-  }
+// @keyframes hues {
+//     0% {
+//         color: hsl(210, 100%, 50%);
+//     }
+//     9.090909090909091% {
+//         color: hsl(240, 100%, 50%);
+//     }
+//     18.181818181818182% {
+//         color: hsl(150, 100%, 50%);
+//     }
+//     27.272727272727273% {
+//         color: hsl(270, 100%, 50%);
+//     }
+//     36.363636363636364% {
+//         color: hsl(300, 100%, 50%);
+//     }
+//     45.454545454545455% {
+//         color: hsl(60, 100%, 50%);
+//     }
+//     54.545454545454545% {
+//         color: hsl(330, 100%, 50%);
+//     }
+//     63.636363636363636% {
+//         color: hsl(90, 100%, 50%);
+//     }
+//     72.727272727272727% {
+//         color: hsl(360, 100%, 50%);
+//     }
+//     81.818181818181818% {
+//         color: hsl(0, 100%, 50%);
+//     }
+//     90.909090909090909% {
+//         color: hsl(30, 100%, 50%);
+//     }
+//     100% {
+//         color: hsl(120, 100%, 50%);
+//     }
+//   }
   
   @keyframes saturationsA {
     0% {
@@ -45,7 +45,7 @@
       filter: saturate(90%) brightness(1);
     }
     40% {
-      filter: saturate(30%) brightness(1.25);
+      filter: saturate(40%) brightness(1.25);
     }
     60% {
       filter: saturate(60%) brightness(1.1);
@@ -66,7 +66,7 @@
       filter: saturate(70%) brightness(1);
     }
     40% {
-      filter: saturate(10%) brightness(1.25);
+      filter: saturate(20%) brightness(1.25);
     }
     60% {
       filter: saturate(80%) brightness(1.01);
@@ -139,5 +139,26 @@
     }
     100% {
       transform: translateX(-3%) translateY(10%) rotate(-8deg);
+    }
+  }
+
+  @keyframes transformsC {
+    0% {
+      transform: translateX(8%) translateY(9%) rotate(-6deg);
+    }
+    20% {
+      transform: translateX(-7%) translateY(-10%) rotate(3deg);
+    }
+    40% {
+      transform: translateX(2%) translateY(2%) rotate(1deg);
+    }
+    60% {
+      transform: translateX(6%) translateY(5%) rotate(10deg);
+    }
+    80% {
+      transform: translateX(10%) translateY(-7%) rotate(-2deg);
+    }
+    100% {
+      transform: translateX(-4%) translateY(-9%) rotate(-10deg);
     }
   }
