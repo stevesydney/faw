@@ -22,42 +22,6 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_theme_file_uri( 'favicon-16x16.png' ) ?>">
 
 	<?php wp_head(); ?>
-	<style id="generated-css">
-		<?php
-			// global $faw_colour_sets;
-			// var_dump($faw_colour_sets);
-		?>
-
-	</style>
-	<style>
-		:root {
-			--colour-a-1: hsl(150, 60%, 60%);
-			--colour-a-2: hsl(20, 60%, 60%);
-			--colour-a-3: hsl(80, 60%, 60%);
-		}
-		body {
-			animation-delay: 0ms;
-			animation-direction: alternate;
-			animation-duration: 10000ms;
-			animation-fill-mode: both;
-			animation-iteration-count: infinite;
-			animation-name: bgcycle;
-			animation-play-state: running;
-			animation-timing-function: linear;
-		}
-
-		@keyframes bgcycle {
-			0% {
-				background-color: var(--colour-a-1);
-			}
-			50% {
-				background-color: var(--colour-a-2);
-			}
-			100% {
-				background-color: var(--colour-a-3);
-			}
-		}
-	</style>
 </head>
 
 <body <?php body_class(); ?>>
