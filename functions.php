@@ -181,3 +181,84 @@ function wpassist_remove_css(){
 	wp_dequeue_style( 'classic-theme-styles' );
 } 
 add_action( 'wp_enqueue_scripts', 'wpassist_remove_css' );
+
+function generateHue($faw_hue)
+{
+	$faw_new_hue = random_int(0, 360);
+	if (!$faw_hue)
+	{
+		return $faw_new_hue;
+	}
+
+	while ($faw_new_hue >= $faw_hue - 50 && $faw_new_hue <= $faw_hue + 50)
+	{
+		$faw_new_hue = random_int(0, 360);
+	}
+	return $faw_new_hue;
+}
+
+function generateSat($faw_hue, $faw_sat)
+{
+	$faw_sat_max = $faw_hue >= 55 && $faw_hue <= 175 ? 80 : 100;
+	$faw_sat_min = 10;
+
+	$faw_new_sat = random_int($faw_sat_min, $faw_sat_max);
+
+	if (!$faw_sat)
+	{
+		return $faw_new_sat;
+	}
+
+	while($faw_new_sat >= $faw_sat - 5 && $faw_new_sat <= $faw_sat + 5 )
+	{
+		$faw_new_sat = random_int($faw_sat_min, $faw_sat_max);
+	}
+	return $faw_new_sat;
+}
+function generateSet($faw_hue)
+{
+	$faw_sat_a = generateSat($faw_hue, false);
+	$faw_sat_b = generateSat($faw_hue, $faw_sat_a);
+	$faw_sat_c = generateSat($faw_hue, $faw_sat_b);
+	$faw_lum = 50;
+
+	$faw_set = array(
+		'a' => array(
+			'h' => $faw_hue,
+			's' => $faw_sat_a,
+			'l' => $faw_lum
+		),
+		'b' => array(
+			'h' => $faw_hue,
+			's' => $faw_sat_b,
+			'l' => $faw_lum
+		),
+		'c' => array(
+			'h' => $faw_hue,
+			's' => $faw_sat_c,
+			'l' => $faw_lum
+		)
+	);
+
+	return $faw_set;
+}
+
+$faw_colour_sets;
+function faw_generate_colour_sets($qty = 2)
+{
+	global $faw_colour_sets;
+	if (!isset($faw_colour_sets))
+	{
+		$faw_old_hue = 0;
+		$faw_colour_sets = array();
+		var_dump('FUCK');
+		for ($x = 0; $x < $qty; $x++) {
+			var_dump('FUCK');
+			$faw_hue = generateHue($faw_old_hue);
+			array_push($faw_colour_sets, generateSet($faw_hue));
+		}
+	}
+	return $faw_colour_sets;
+}
+
+// add_filter('faw_colour_sets', 'faw_generate_colour_sets');
