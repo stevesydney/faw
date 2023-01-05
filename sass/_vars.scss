@@ -11,11 +11,12 @@
     --margin: 1rem;
     --margin-large: 2.5rem;
 
-    --colour-highlight: rgb(47,116,60);
+
     --colour-bg-base: rgb(255,255,255);
     --colour-bg-base-mid: rgb(238,238,238);
     --colour-fg-base: rgb(25,25,25);
     --colour-fg-base-mid: rgb(42,42,42);
+    --colour-highlight: rgb(25,25,25);
     --colour-link: rgb(25,25,25);
     --colour-link-hover: rgb(25,25,25);
     --colour-link-focus: var(--colour-highlight);
@@ -29,6 +30,8 @@
     --body-line-height: 1.6;
     --link-decoration: underline;
     --link-decoration-hover: none;
+
+    --hue-animation-duration: 100000ms;
 }
 
 // @media (prefers-color-scheme: dark) {

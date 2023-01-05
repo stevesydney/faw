@@ -1,7 +1,74 @@
 .global-logo {
-    width: 75px;
+    width: 90px;
+    height: 66px;
+    position: relative;
 }
 
 .home .global-logo {
     width: 151px;
+    height: 111px;
+}
+
+.global-logo-bar-container {
+    width: 100%;
+    height: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+  
+.global-logo-bar-container-2 {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+  
+.global-logo-bar-container-3 {
+    bottom: 0;
+}
+  
+.global-logo-bar {
+    width: 82%;
+    height: 47%;
+    position: relative;
+    animation-delay: 0ms;
+    animation-direction: alternate;
+    animation-duration: var(--hue-animation-duration), calc(var(--hue-animation-duration) / 2);
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: hues, saturationsA;
+    animation-play-state: running;
+    background-color: currentColor;
+    transform-origin: 50%;
+}
+
+.global-logo-bar-1 {
+    animation-name: hues, saturationsA, transformsA;
+}
+
+.global-logo-bar-2 {
+    animation-name: hues, saturationsB, transformsB;
+}
+
+.global-logo-bar-3 {
+    animation-name: hues, saturationsC;
+}
+  
+.global-logo-letter {
+    position: absolute;
+    right: 2%;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+}
+
+.global-logo-letter svg {
+    display: block;
+}
+
+.global-logo-letter svg path {
+    fill: #ffffff;
 }
