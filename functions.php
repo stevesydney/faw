@@ -181,3 +181,20 @@ function wpassist_remove_css(){
 	wp_dequeue_style( 'classic-theme-styles' );
 } 
 add_action( 'wp_enqueue_scripts', 'wpassist_remove_css' );
+
+function create_research_posttype() {
+	register_post_type(
+		'research',
+		array(
+			'labels' => array(
+				'name' => __('Research Item'),
+				'singular_name' => __('Research Item'),
+				'menu_name' => __('Research', 'admin menu'),
+			),
+			'public' => true,
+			'has_archive' => false,
+			'rewrite' => array('slug' => 'research'),
+		)
+	);
+}
+// add_action('init', 'create_research_posttype');

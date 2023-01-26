@@ -22,6 +22,7 @@
       margin-top: 0;
       padding-top: var(--margin);
       margin-bottom: var(--margin);
+      line-height: 1.2;
     }
   
     h1 {
@@ -75,8 +76,8 @@
     blockquote {
       padding-left: var(--margin);
       padding-right: 0;
-      margin-top: var(--margin-large);
-      margin-bottom: var(--margin-large);
+      margin-top: var(--margin);
+      margin-bottom: var(--margin);
       margin-left: 0;
       margin-right: 0;
       border-left: 2px solid currentColor;
