@@ -14,8 +14,6 @@
 		<?php the_title( '<h1>', '</h1>' ); ?>
 	</header>
 
-	<?php faw_post_thumbnail(); ?>
-
 	<div>
 		<?php
 		the_content();

@@ -23,8 +23,6 @@
 		<?php endif; ?>
 	</header>
 
-	<?php faw_post_thumbnail(); ?>
-
 	<div>
 		<?php the_excerpt(); ?>
 	</div>
