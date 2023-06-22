@@ -1,4 +1,12 @@
 .global-footer {
     border-top: 2px solid var(--colour-fg-base);
-    padding: var(--margin);
+    padding-top: var(--margin);
+    padding-bottom: var(--margin);
+}
+
+@media (min-width: 600px) {
+    .global-footer {
+        padding-left: var(--margin);
+        padding-right: var(--margin);
+    }
 }
