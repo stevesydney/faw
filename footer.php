@@ -14,9 +14,9 @@
 	<footer class="global-footer">
 		<ul class="global-footer-links">
 			<li class="global-footer-link"><a rel="me" href="https://substack.com/@fasterandworse">Substack</a></li>
+			<li class="global-footer-link"><a rel="me" href="https://www.twitch.tv/fasterandworse">Twitch</a></li>
 			<li class="global-footer-link"><a rel="me" href="https://twitter.com/fasterandworse">Twitter</a></li>
 			<li class="global-footer-link"><a rel="me" href="https://hci.social/@fasterandworse">Mastodon</a></li>
-			<li class="global-footer-link"><a rel="me" href="https://www.twitch.tv/fasterandworse">Twitch</a></li>
 			<li class="global-footer-link"><a rel="me" href="https://bsky.app/profile/fasterandworse.bsky.social">Bluesky</a></li>
 		</ul>
 	</footer>
