@@ -200,6 +200,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--gutter: 1rem;
 	--large-gutter: 2rem;
 	--margin-small: 0.3rem;
+	--margin-medium: 0.6rem;
 	--margin: 1rem;
 	--margin-large: 2.5rem;
 	--viewport-width-small: 400px;
@@ -207,6 +208,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--colour-bg-base-mid: rgb(238, 238, 238);
 	--colour-fg-base: rgb(25, 25, 25);
 	--colour-fg-base-mid: rgb(42, 42, 42);
+	--colour-fg-base-light: rgb(121, 121, 121);
 	--colour-highlight: rgb(25, 25, 25);
 	--colour-link: rgb(25, 25, 25);
 	--colour-link-hover: rgb(25, 25, 25);
@@ -217,10 +219,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--text-align: left;
 	--body-font-family: var(--font-serif);
 	--body-font-size: 1rem;
-	--body-line-height: 1.6;
+	--body-line-height: 1.5;
 	--link-decoration: underline;
 	--link-decoration-hover: none;
 	--hue-animation-duration: 48000ms;
+	--sans-serif-title-text-size: 0.6rem;
+	--sans-serif-title-text-weight: 700;
+	--sans-serif-title-text-color: var(--colour-fg-base-light);
+	--sans-serif-title-text-letter-spacing: 0.04rem;
+	--sans-serif-title-text-transform: uppercase;
 }
 
 /* All
@@ -240,13 +247,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 :root {
 	font-family: var(--font-serif);
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 18px;
 	background-color: var(--colour-bg-base);
 	color: var(--colour-fg-base);
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	line-height: 1.6;
+	line-height: 1.4;
 }
 
 body {
@@ -356,8 +363,10 @@ input[type=button],
 input[type=submit],
 button {
 	font-family: var(--font-sans-serif);
-	font-weight: 400;
-	font-size: 0.8rem;
+	font-size: var(--sans-serif-title-text-size);
+	font-weight: var(--sans-serif-title-text-weight);
+	text-transform: var(--sans-serif-title-text-transform);
+	letter-spacing: var(--sans-serif-title-text-letter-spacing);
 	appearance: none;
 	-webkit-appearance: none;
 	border-radius: 0;
@@ -443,8 +452,11 @@ button {
 
 .global-description {
 	font-family: var(--font-sans-serif);
-	font-size: 0.8rem;
-	font-weight: 400;
+	font-weight: var(--sans-serif-title-text-weight);
+	font-size: var(--sans-serif-title-text-size);
+	color: var(--sans-serif-title-text-color);
+	letter-spacing: var(--sans-serif-title-text-letter-spacing);
+	text-transform: var(--sans-serif-title-text-transform);
 }
 
 @media (min-width: 800px) {
@@ -586,34 +598,41 @@ button {
 /* Article
 --------------------------------------------- */
 .article-title {
-	font-size: 1.9em;
-	font-weight: 700;
-	line-height: 1.2;
+	font-size: 2.6em;
+	font-weight: 400;
+	line-height: 1.1;
 	font-family: var(--font-serif);
 	margin-top: 0;
-	margin-bottom: var(--margin);
+	margin-bottom: var(--margin-medium);
 }
 
 @media (min-width: 500px) {
 	.article-title {
-		font-size: 2.2em;
+		font-size: 3em;
+		margin-bottom: var(--margin);
 	}
 }
 
 .article-meta {
-	margin-bottom: var(--margin);
+	margin-bottom: var(--margin-small);
 }
 
 .article-date {
 	font-family: var(--font-sans-serif);
-	font-weight: 400;
-	font-size: 0.8rem;
+	color: var(--sans-serif-title-text-color);
+	font-size: var(--sans-serif-title-text-size);
+	font-weight: var(--sans-serif-title-text-weight);
+	text-transform: var(--sans-serif-title-text-transform);
+	letter-spacing: var(--sans-serif-title-text-letter-spacing);
 }
 
 .article-author {
 	font-family: var(--font-sans-serif);
-	font-weight: 400;
-	font-size: 0.8rem;
+	color: var(--sans-serif-title-text-color);
+	font-size: var(--sans-serif-title-text-size);
+	font-weight: var(--sans-serif-title-text-weight);
+	text-transform: var(--sans-serif-title-text-transform);
+	letter-spacing: var(--sans-serif-title-text-letter-spacing);
 }
 
 .article-content {
@@ -644,8 +663,23 @@ button {
 	font-family: var(--font-serif);
 	font-weight: 400;
 	margin-top: 0;
-	margin-bottom: var(--margin);
+	margin-bottom: var(--margin-medium);
 	line-height: 1.2;
+}
+
+.article-content h1 strong,
+.article-content h1 b,
+.article-content h2 strong,
+.article-content h2 b,
+.article-content h3 strong,
+.article-content h3 b,
+.article-content h4 strong,
+.article-content h4 b,
+.article-content h5 strong,
+.article-content h5 b,
+.article-content h6 strong,
+.article-content h6 b {
+	font-weight: inherit;
 }
 
 .article-content h1:not(:first-child),
@@ -658,15 +692,15 @@ button {
 }
 
 .article-content h1 {
-	font-size: 1.6em;
+	font-size: 1.4em;
 }
 
 .article-content h2 {
-	font-size: 1.6em;
+	font-size: 1.4em;
 }
 
 .article-content h3 {
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 
 .article-content h4 {
@@ -801,6 +835,20 @@ button {
 }
 
 @media (min-width: 500px) {
+	.article-content h1,
+	.article-content h2,
+	.article-content h3,
+	.article-content h4,
+	.article-content h5,
+	.article-content h6 {
+		margin-bottom: var(--margin);
+	}
+	.article-content h1 {
+		font-size: 1.8em;
+	}
+	.article-content h2 {
+		font-size: 1.8em;
+	}
 	.article-content ul,
 	.article-content ol {
 		padding-left: var(--margin-large);
@@ -817,14 +865,20 @@ button {
 
 .article-modified {
 	font-family: var(--font-sans-serif);
-	font-weight: 400;
-	font-size: 0.8rem;
+	color: var(--sans-serif-title-text-color);
+	font-size: var(--sans-serif-title-text-size);
+	font-weight: var(--sans-serif-title-text-weight);
+	text-transform: var(--sans-serif-title-text-transform);
+	letter-spacing: var(--sans-serif-title-text-letter-spacing);
 }
 
 .article-published {
 	font-family: var(--font-sans-serif);
-	font-weight: 400;
-	font-size: 0.8rem;
+	color: var(--sans-serif-title-text-color);
+	font-size: var(--sans-serif-title-text-size);
+	font-weight: var(--sans-serif-title-text-weight);
+	text-transform: var(--sans-serif-title-text-transform);
+	letter-spacing: var(--sans-serif-title-text-letter-spacing);
 }
 
 .article-footer {
@@ -845,8 +899,11 @@ button {
 
 .article-comments-link {
 	font-family: var(--font-sans-serif);
-	font-weight: 400;
-	font-size: 0.8rem;
+	font-weight: var(--sans-serif-title-text-weight);
+	font-size: var(--sans-serif-title-text-size);
+	color: var(--sans-serif-title-text-color);
+	letter-spacing: var(--sans-serif-title-text-letter-spacing);
+	text-transform: var(--sans-serif-title-text-transform);
 }
 
 .article-comments-title {
@@ -995,8 +1052,11 @@ button {
 
 .wp-block-search__label {
 	font-family: var(--font-sans-serif);
-	font-weight: 700;
-	font-size: 0.8rem;
+	font-weight: var(--sans-serif-title-text-weight);
+	font-size: var(--sans-serif-title-text-size);
+	color: var(--sans-serif-title-text-color);
+	letter-spacing: var(--sans-serif-title-text-letter-spacing);
+	text-transform: var(--sans-serif-title-text-transform);
 	display: block;
 	margin-bottom: var(--margin-small);
 }
@@ -1017,8 +1077,11 @@ button {
 
 .wp-block-group h2 {
 	font-family: var(--font-sans-serif);
-	font-weight: 700;
-	font-size: 0.8rem;
+	font-weight: var(--sans-serif-title-text-weight);
+	font-size: var(--sans-serif-title-text-size);
+	color: var(--sans-serif-title-text-color);
+	letter-spacing: var(--sans-serif-title-text-letter-spacing);
+	text-transform: var(--sans-serif-title-text-transform);
 	margin-top: 0;
 	margin-bottom: var(--margin-small);
 }

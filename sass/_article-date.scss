@@ -1,6 +1,8 @@
 .article-date {
     font-family: var(--font-sans-serif);
-    font-weight: 400;
-    font-size: 0.8rem;
+    color: var(--sans-serif-title-text-color);
+    font-size: var(--sans-serif-title-text-size);
+    font-weight: var(--sans-serif-title-text-weight);
+    text-transform: var(--sans-serif-title-text-transform);
+    letter-spacing: var(--sans-serif-title-text-letter-spacing);
 }
-  

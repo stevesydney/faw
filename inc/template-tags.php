@@ -31,7 +31,8 @@ if ( ! function_exists( 'faw_posted_on' ) ) :
 		// 	'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		// );
 
-		$posted_on = '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>';
+		//$posted_on = '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>';
+		$posted_on = $time_string;
 
 		echo '<span class="article-date">' . $posted_on . '</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
@@ -43,10 +44,16 @@ if ( ! function_exists( 'faw_posted_by' ) ) :
 	 * Prints HTML with meta information for the current author.
 	 */
 	function faw_posted_by() {
+		// $byline = sprintf(
+		// 	/* translators: %s: post author. */
+		// 	esc_html_x( 'by %s', 'post author', 'faw' ),
+		// 	'<span class="article-author-name" itemprop="author"><a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+		// );
+
 		$byline = sprintf(
 			/* translators: %s: post author. */
 			esc_html_x( 'by %s', 'post author', 'faw' ),
-			'<span class="article-author-name" itemprop="author"><a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+			'<span class="article-author-name" itemprop="author">' . esc_html( get_the_author() ) . '</span>'
 		);
 
 		echo '<span class="article-author"> ' . $byline . '</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped

@@ -8,8 +8,11 @@
     --gutter: 1rem;
     --large-gutter: 2rem;
     --margin-small: 0.3rem;
+    --margin-medium: 0.6rem;
     --margin: 1rem;
     --margin-large: 2.5rem;
+
+
 
     --viewport-width-small: 400px;
 
@@ -17,6 +20,7 @@
     --colour-bg-base-mid: rgb(238, 238, 238);
     --colour-fg-base: rgb(25, 25, 25);
     --colour-fg-base-mid: rgb(42, 42, 42);
+    --colour-fg-base-light: rgb(121, 121, 121);
     --colour-highlight: rgb(25, 25, 25);
     --colour-link: rgb(25, 25, 25);
     --colour-link-hover: rgb(25, 25, 25);
@@ -28,11 +32,17 @@
     --text-align: left;
     --body-font-family: var(--font-serif);
     --body-font-size: 1rem;
-    --body-line-height: 1.6;
+    --body-line-height: 1.5;
     --link-decoration: underline;
     --link-decoration-hover: none;
 
     --hue-animation-duration: 48000ms;
+
+    --sans-serif-title-text-size: 0.6rem;
+    --sans-serif-title-text-weight: 700;
+    --sans-serif-title-text-color: var(--colour-fg-base-light);
+    --sans-serif-title-text-letter-spacing: 0.04rem;
+    --sans-serif-title-text-transform: uppercase;
 }
 
 // @media (prefers-color-scheme: dark) {

@@ -1,11 +1,12 @@
-.wp-block-search {
-
-}
+.wp-block-search {}
 
 .wp-block-search__label {
     font-family: var(--font-sans-serif);
-    font-weight: 700;
-    font-size: 0.8rem;
+    font-weight: var(--sans-serif-title-text-weight);
+    font-size: var(--sans-serif-title-text-size);
+    color: var(--sans-serif-title-text-color);
+    letter-spacing: var(--sans-serif-title-text-letter-spacing);
+    text-transform: var(--sans-serif-title-text-transform);
     display: block;
     margin-bottom: var(--margin-small);
 }
