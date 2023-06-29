@@ -196,12 +196,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--max-readable-width: 34rem;
 	--max-content-width: 50rem;
 	--font-sans-serif: "Barlow", "Helvetica Neue", Helvetica, "Arimo", Arial, sans-serif;
-	--font-serif: "Libertinus", "Redaction", "Times New Roman", "Tinos", Times, serif;
+	--font-serif: "Libertinus", "Times New Roman", "Tinos", Times, serif;
 	--gutter: 1rem;
 	--large-gutter: 2rem;
 	--margin-small: 0.3rem;
 	--margin: 1rem;
 	--margin-large: 2.5rem;
+	--viewport-width-small: 400px;
 	--colour-bg-base: rgb(255, 255, 255);
 	--colour-bg-base-mid: rgb(238, 238, 238);
 	--colour-fg-base: rgb(25, 25, 25);
@@ -256,7 +257,7 @@ body {
 	background-color: inherit;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
 	body {
 		margin-left: var(--large-gutter);
 		margin-right: var(--large-gutter);
@@ -585,7 +586,7 @@ button {
 /* Article
 --------------------------------------------- */
 .article-title {
-	font-size: 1.6em;
+	font-size: 1.9em;
 	font-weight: 700;
 	line-height: 1.2;
 	font-family: var(--font-serif);
@@ -634,13 +635,26 @@ button {
 	margin-bottom: 0;
 }
 
-.article-content h1, .article-content h2, .article-content h3, .article-content h4, .article-content h5, .article-content h6 {
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content h5,
+.article-content h6 {
 	font-family: var(--font-serif);
 	font-weight: 400;
 	margin-top: 0;
-	padding-top: var(--margin);
 	margin-bottom: var(--margin);
 	line-height: 1.2;
+}
+
+.article-content h1:not(:first-child),
+.article-content h2:not(:first-child),
+.article-content h3:not(:first-child),
+.article-content h4:not(:first-child),
+.article-content h5:not(:first-child),
+.article-content h6:not(:first-child) {
+	padding-top: var(--margin);
 }
 
 .article-content h1 {
@@ -674,7 +688,8 @@ button {
 	text-align: var(--text-align);
 }
 
-.article-content ul, .article-content ol {
+.article-content ul,
+.article-content ol {
 	padding-left: var(--margin);
 	margin-bottom: var(--margin);
 }
@@ -759,8 +774,11 @@ button {
 
 .article-content figure {
 	overflow: auto;
-	padding-top: var(--margin);
 	margin-bottom: var(--margin-large);
+}
+
+.article-content figure:not(:first-child) {
+	padding-top: var(--margin);
 }
 
 .article-content figcaption {
@@ -782,8 +800,9 @@ button {
 	margin-left: 0.1em;
 }
 
-@media (min-width: 400px) {
-	.article-content ul, .article-content ol {
+@media (min-width: 500px) {
+	.article-content ul,
+	.article-content ol {
 		padding-left: var(--margin-large);
 	}
 }
