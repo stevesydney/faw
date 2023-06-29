@@ -39,27 +39,27 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 
 @font-face {
-	font-family: Redaction;
+	font-family: Libertinus;
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
-	src: local("Redaction Regular"), local("Redaction-Regular"), url(fonts/Redaction-Regular.woff2) format("woff2");
+	src: local("Libertinus Serif Regular"), local("LibertinusSerif-Regular"), url(fonts/LibertinusSerif-Regular.woff2) format("woff2");
 }
 
 @font-face {
-	font-family: Redaction;
+	font-family: Libertinus;
 	font-weight: 400;
 	font-style: italic;
 	font-display: swap;
-	src: local("Redaction Italic"), local("Redaction-Italic"), url(fonts/Redaction-Italic.woff2) format("woff2");
+	src: local("Libertinus Serif Italic"), local("LibertinusSerif-Italic"), url(fonts/LibertinusSerif-Italic.woff2) format("woff2");
 }
 
 @font-face {
-	font-family: Redaction;
+	font-family: Libertinus;
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
-	src: local("Redaction Bold"), local("Redaction-Bold"), url(fonts/Redaction-Bold.woff2) format("woff2");
+	src: local("Libertinus Serif Semibold"), local("LibertinusSerif-Semibold"), url(fonts/LibertinusSerif-Semibold.woff2) format("woff2");
 }
 
 /* Keyframes
@@ -196,22 +196,22 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--max-readable-width: 34rem;
 	--max-content-width: 50rem;
 	--font-sans-serif: "Barlow", "Helvetica Neue", Helvetica, "Arimo", Arial, sans-serif;
-	--font-serif: "Redaction", "Times New Roman", "Tinos", Times, serif;
+	--font-serif: "Libertinus", "Redaction", "Times New Roman", "Tinos", Times, serif;
 	--gutter: 1rem;
 	--large-gutter: 2rem;
 	--margin-small: 0.3rem;
 	--margin: 1rem;
 	--margin-large: 2.5rem;
-	--colour-bg-base: rgb(255,255,255);
-	--colour-bg-base-mid: rgb(238,238,238);
-	--colour-fg-base: rgb(25,25,25);
-	--colour-fg-base-mid: rgb(42,42,42);
-	--colour-highlight: rgb(25,25,25);
-	--colour-link: rgb(25,25,25);
-	--colour-link-hover: rgb(25,25,25);
+	--colour-bg-base: rgb(255, 255, 255);
+	--colour-bg-base-mid: rgb(238, 238, 238);
+	--colour-fg-base: rgb(25, 25, 25);
+	--colour-fg-base-mid: rgb(42, 42, 42);
+	--colour-highlight: rgb(25, 25, 25);
+	--colour-link: rgb(25, 25, 25);
+	--colour-link-hover: rgb(25, 25, 25);
 	--colour-link-focus: var(--colour-highlight);
-	--colour-link-visited: rgb(25,25,25);
-	--colour-link-active: rgb(25,25,25);
+	--colour-link-visited: rgb(25, 25, 25);
+	--colour-link-active: rgb(25, 25, 25);
 	--hyphens: none;
 	--text-align: left;
 	--body-font-family: var(--font-serif);

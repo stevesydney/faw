@@ -4,7 +4,7 @@
     --max-readable-width: 34rem;
     --max-content-width: 50rem;
     --font-sans-serif: "Barlow", "Helvetica Neue", Helvetica, "Arimo", Arial, sans-serif;
-    --font-serif: "Redaction", "Times New Roman", "Tinos", Times, serif;
+    --font-serif: "Libertinus", "Times New Roman", "Tinos", Times, serif;
     --gutter: 1rem;
     --large-gutter: 2rem;
     --margin-small: 0.3rem;
@@ -12,16 +12,16 @@
     --margin-large: 2.5rem;
 
 
-    --colour-bg-base: rgb(255,255,255);
-    --colour-bg-base-mid: rgb(238,238,238);
-    --colour-fg-base: rgb(25,25,25);
-    --colour-fg-base-mid: rgb(42,42,42);
-    --colour-highlight: rgb(25,25,25);
-    --colour-link: rgb(25,25,25);
-    --colour-link-hover: rgb(25,25,25);
+    --colour-bg-base: rgb(255, 255, 255);
+    --colour-bg-base-mid: rgb(238, 238, 238);
+    --colour-fg-base: rgb(25, 25, 25);
+    --colour-fg-base-mid: rgb(42, 42, 42);
+    --colour-highlight: rgb(25, 25, 25);
+    --colour-link: rgb(25, 25, 25);
+    --colour-link-hover: rgb(25, 25, 25);
     --colour-link-focus: var(--colour-highlight);
-    --colour-link-visited: rgb(25,25,25);
-    --colour-link-active: rgb(25,25,25);
+    --colour-link-visited: rgb(25, 25, 25);
+    --colour-link-active: rgb(25, 25, 25);
 
     --hyphens: none;
     --text-align: left;
