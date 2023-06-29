@@ -223,7 +223,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--link-decoration: underline;
 	--link-decoration-hover: none;
 	--hue-animation-duration: 48000ms;
-	--sans-serif-title-text-size: 0.6rem;
+	--sans-serif-title-text-size: 0.7rem;
 	--sans-serif-title-text-weight: 700;
 	--sans-serif-title-text-color: var(--colour-fg-base-light);
 	--sans-serif-title-text-letter-spacing: 0.04rem;
@@ -247,7 +247,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 :root {
 	font-family: var(--font-serif);
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 19px;
 	background-color: var(--colour-bg-base);
 	color: var(--colour-fg-base);
 	text-rendering: optimizeLegibility;
