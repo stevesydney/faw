@@ -105,9 +105,17 @@
   cite {
     display: block;
     font-family: var(--font-sans-serif);
+    font-weight: var(--sans-serif-title-text-weight);
+    font-size: var(--sans-serif-title-text-size);
+    color: var(--sans-serif-title-text-color);
+    letter-spacing: var(--sans-serif-title-text-letter-spacing);
+    text-transform: var(--sans-serif-title-text-transform);
     padding-top: var(--margin);
     font-style: normal;
-    font-size: 0.8em;
+
+    & a {
+      color: inherit;
+    }
   }
 
   table {
@@ -118,7 +126,11 @@
   th,
   tfoot td {
     font-family: var(--font-sans-serif);
-    font-weight: 700;
+    font-family: var(--font-sans-serif);
+    font-weight: var(--sans-serif-title-text-weight);
+    font-size: var(--sans-serif-title-text-size);
+    letter-spacing: var(--sans-serif-title-text-letter-spacing);
+    text-transform: var(--sans-serif-title-text-transform);
     border-width: 1px;
     border-style: solid;
     border-color: currentColor;
@@ -137,6 +149,10 @@
 
   td {
     font-family: var(--font-sans-serif);
+    font-family: var(--font-sans-serif);
+    font-size: var(--sans-serif-title-text-size);
+    letter-spacing: var(--sans-serif-title-text-letter-spacing);
+    text-transform: var(--sans-serif-title-text-transform);
     border-width: 1px;
     border-style: solid;
     border-color: currentColor;
@@ -164,8 +180,12 @@
 
   figcaption {
     font-family: var(--font-sans-serif);
+    font-weight: var(--sans-serif-title-text-weight);
+    font-size: var(--sans-serif-title-text-size);
+    color: var(--sans-serif-title-text-color);
+    letter-spacing: var(--sans-serif-title-text-letter-spacing);
+    text-transform: var(--sans-serif-title-text-transform);
     padding-top: var(--margin);
-    font-size: 0.8em;
     text-align: center;
   }
 

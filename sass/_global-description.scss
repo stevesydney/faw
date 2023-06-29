@@ -5,4 +5,19 @@
     color: var(--sans-serif-title-text-color);
     letter-spacing: var(--sans-serif-title-text-letter-spacing);
     text-transform: var(--sans-serif-title-text-transform);
+    margin-left: var(--margin);
+}
+
+.global-description-byline {
+    display: block;
+}
+
+@media (min-width: 500px) {
+    .global-description {
+        margin-left: 0;
+    }
+
+    .global-description-byline {
+        display: inline;
+    }
 }

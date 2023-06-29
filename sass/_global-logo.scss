@@ -2,6 +2,7 @@
     width: 90px;
     height: 66px;
     position: relative;
+    flex-shrink: 0;
 }
 
 .home .global-logo {
@@ -18,17 +19,17 @@
     position: absolute;
     z-index: 1;
 }
-  
+
 .global-logo-bar-container-2 {
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
 }
-  
+
 .global-logo-bar-container-3 {
     bottom: 0;
 }
-  
+
 .global-logo-bar {
     width: 82%;
     height: 47%;
@@ -55,7 +56,7 @@
 .global-logo-bar-3 {
     animation-name: saturationsC, transformsC;
 }
-  
+
 .global-logo-letter {
     position: absolute;
     right: 2%;

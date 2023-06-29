@@ -1,7 +1,34 @@
 .global-footer-link {
     font-family: var(--font-sans-serif);
-    font-size: 0.8rem;
+    color: var(--sans-serif-title-text-color);
+    font-size: var(--sans-serif-title-text-size);
+    font-weight: var(--sans-serif-title-text-weight);
+    text-transform: var(--sans-serif-title-text-transform);
+    letter-spacing: var(--sans-serif-title-text-letter-spacing);
+
+    &>a,
+    &>a:link {
+        color: currentColor;
+    }
+
+    &>a:visited {
+        color: var(--colour-link-visited);
+    }
+
+    &>a:hover {
+        color: var(--colour-link-hover);
+    }
+
+    &>a:active {
+        color: var(--colour-link-active);
+    }
+
+    &>a:focus {
+        color: var(--colour-link-focus);
+    }
+
 }
+
 
 
 @media (min-width: 600px) {

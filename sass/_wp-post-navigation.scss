@@ -9,21 +9,25 @@
 }
 
 .post-navigation .nav-links .nav-previous::before {
-    content: "⏮ ";
+    content: "Previous: ";
 }
 
-.post-navigation .nav-links .nav-next::after {
-    content: " ⏭";
+.post-navigation .nav-links .nav-next::before {
+    content: "Next: ";
 }
 
 .post-navigation .nav-links .nav-previous,
 .post-navigation .nav-links .nav-next {
 
-    font-size: 0.8rem;
+    font-family: var(--font-sans-serif);
+    font-weight: var(--sans-serif-title-text-weight);
+    font-size: var(--sans-serif-title-text-size);
+    color: var(--sans-serif-title-text-color);
+    letter-spacing: var(--sans-serif-title-text-letter-spacing);
+    text-transform: var(--sans-serif-title-text-transform);
 
     & .nav-title {
-        font-weight: 400;
-        font-family: var(--font-sans-serif);
+        color: inherit;
     }
 
     & a,
@@ -31,12 +35,12 @@
     & a:hover,
     & a:visited,
     & a:active {
+        color: currentColor;
         text-decoration: none;
     }
 
 
     & a:link .nav-title {
-        color: var(--colour-link);
         text-decoration: underline;
     }
 
@@ -70,6 +74,7 @@
         white-space: nowrap;
         width: 1px;
     }
+
     & .nav-subtitle:focus {
         clip: auto;
         height: auto;

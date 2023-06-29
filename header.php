@@ -67,6 +67,7 @@
 			</div>
 			<?php
 				$descClass = 'global-description';
+				$hard_code_description = true;
 				if ( is_front_page() && is_home() ) :
 			?>
 			<h1 class="hide-visual"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -80,7 +81,17 @@
 				$faw_description = get_bloginfo( 'description', 'display' );
 				if ( $faw_description || is_customize_preview() ) :
 			?>
-			<p class="<?php echo $descClass; ?>"><?php echo $faw_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+
+			<?php
+				if (!$hard_code_description) :
+			?>
+			<!-- <p class="<?php echo $descClass; ?>"><?php echo $faw_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p> -->
+			<?php
+				else :
+			?>
+			<p class="<?php echo $descClass; ?>">Design and Technology research, ideas, and opinions <span class="global-description-byline">by Stephen Farrugia</span></p>
+			<?php endif; ?>
+			
 			<?php endif; ?>
 		</div>
 
