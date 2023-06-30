@@ -26,7 +26,7 @@ if ( post_password_required() ) {
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) :
 		?>
-		<h2 class="article-comments-title">
+		<h2 class="article-comments-title hide-visual">
 			<?php
 			$faw_comment_count = get_comments_number();
 			if ( '1' === $faw_comment_count ) {
@@ -65,9 +65,11 @@ if ( post_password_required() ) {
 
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() ) :
+			/*
 			?>
 			<p><?php esc_html_e( 'Comments are closed.', 'faw' ); ?></p>
 			<?php
+			*/
 		endif;
 
 	endif; // Check for have_comments().

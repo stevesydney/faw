@@ -5,6 +5,12 @@
     font-family: var(--font-serif);
     margin-top: 0;
     margin-bottom: var(--margin-medium);
+
+    &>a {
+        text-decoration-thickness: 3px;
+        text-decoration-color: var(--colour-fg-base-ghost);
+    }
+
 }
 
 @media (min-width: 500px) {

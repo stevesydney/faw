@@ -1,28 +1,35 @@
 a {
-    text-decoration: none;
-  }
-  
-  a:link {
-    color: var(--colour-link);
-    text-decoration: underline;
-  }
-  
-  a:visited {
-    color: var(--colour-link-visited);
-  }
-  
-  a:focus {
-    color: var(--colour-link-focus);
-    text-decoration: underline;
-    text-decoration-style: double;
-    outline-color: var(--colour-fg-base);
-  }
-  
-  a:hover {
-    color: var(--colour-link-hover);
-    text-decoration: underline;
-  }
-  
-  a:active {
-    color: var(--colour-link-active);
-  }
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--colour-fg-base-faint);
+  color: currentColor;
+
+}
+
+a:link {
+  color: currentColor;
+}
+
+a:visited {
+  color: currentColor;
+  text-decoration-color: var(--colour-fg-base-ghost);
+}
+
+a:hover {
+  color: currentColor;
+  text-decoration-color: var(--colour-base-blue);
+}
+
+a:active {
+  color: currentColor;
+  text-decoration-color: var(--colour-base-blue);
+}
+
+
+a:focus {
+  color: currentColor;
+  outline-color: var(--colour-base-blue);
+}

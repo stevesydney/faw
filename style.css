@@ -204,24 +204,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--margin: 1rem;
 	--margin-large: 2.5rem;
 	--viewport-width-small: 400px;
+	--colour-base-blue: hsl(208, 100%, 50%);
 	--colour-bg-base: rgb(255, 255, 255);
 	--colour-bg-base-mid: rgb(238, 238, 238);
 	--colour-fg-base: rgb(25, 25, 25);
 	--colour-fg-base-mid: rgb(42, 42, 42);
 	--colour-fg-base-light: rgb(121, 121, 121);
+	--colour-fg-base-faint: rgb(195, 195, 195);
+	--colour-fg-base-ghost: rgb(219, 219, 219);
 	--colour-highlight: rgb(25, 25, 25);
-	--colour-link: rgb(25, 25, 25);
-	--colour-link-hover: rgb(25, 25, 25);
-	--colour-link-focus: var(--colour-highlight);
-	--colour-link-visited: rgb(25, 25, 25);
-	--colour-link-active: rgb(25, 25, 25);
 	--hyphens: none;
 	--text-align: left;
 	--body-font-family: var(--font-serif);
 	--body-font-size: 1rem;
 	--body-line-height: 1.5;
-	--link-decoration: underline;
-	--link-decoration-hover: none;
 	--hue-animation-duration: 48000ms;
 	--sans-serif-title-text-size: 0.7rem;
 	--sans-serif-title-text-weight: 700;
@@ -275,31 +271,45 @@ body {
 --------------------------------------------- */
 a {
 	text-decoration: none;
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-underline-offset: 0.2em;
+	text-decoration-thickness: 1px;
+	text-decoration-color: var(--colour-fg-base-faint);
+	color: currentColor;
 }
 
 a:link {
-	color: var(--colour-link);
-	text-decoration: underline;
+	color: currentColor;
 }
 
 a:visited {
-	color: var(--colour-link-visited);
-}
-
-a:focus {
-	color: var(--colour-link-focus);
-	text-decoration: underline;
-	text-decoration-style: double;
-	outline-color: var(--colour-fg-base);
+	color: currentColor;
+	text-decoration-color: var(--colour-fg-base-ghost);
 }
 
 a:hover {
-	color: var(--colour-link-hover);
-	text-decoration: underline;
+	color: currentColor;
+	text-decoration-color: var(--colour-base-blue);
 }
 
 a:active {
-	color: var(--colour-link-active);
+	color: currentColor;
+	text-decoration-color: var(--colour-base-blue);
+}
+
+a:focus {
+	color: currentColor;
+	outline-color: var(--colour-base-blue);
+}
+
+abbr {
+	text-decoration: none;
+}
+
+abbr:hover {
+	text-decoration: underline dotted;
+	text-decoration-color: var(--colour-fg-base-faint);
 }
 
 input[type=text],
@@ -412,7 +422,7 @@ button {
 /* Global
 --------------------------------------------- */
 .global-main-container {
-	margin-bottom: var(--margin);
+	margin-bottom: var(--margin-large);
 }
 
 @media (min-width: 800px) {
@@ -425,7 +435,7 @@ button {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	margin-bottom: var(--margin);
+	margin-bottom: var(--margin-large);
 }
 
 .global-brand {
@@ -483,10 +493,15 @@ button {
 	}
 }
 
+.global-main {
+	margin-bottom: var(--margin-large);
+}
+
 @media (min-width: 800px) {
 	.global-main {
 		flex-grow: 1;
 		margin-right: var(--margin-large);
+		margin-bottom: 0;
 	}
 }
 
@@ -656,6 +671,11 @@ button {
 	margin-bottom: var(--margin-medium);
 }
 
+.article-title > a {
+	text-decoration-thickness: 3px;
+	text-decoration-color: var(--colour-fg-base-ghost);
+}
+
 @media (min-width: 500px) {
 	.article-title {
 		font-size: 3em;
@@ -690,14 +710,6 @@ button {
 	font-size: var(--body-font-size);
 	line-height: var(--body-line-height);
 	margin-bottom: var(--margin);
-}
-
-.article-content a:link {
-	text-decoration: var(--link-decoration);
-}
-
-.article-content a:hover {
-	text-decoration: var(--link-decoration-hover);
 }
 
 .article-content > *:last-child {
@@ -963,7 +975,7 @@ button {
 }
 
 .article-comments {
-	border-top: 1px solid var(--colour-fg-base);
+	border-top: 2px solid var(--colour-fg-base-faint);
 	padding-top: var(--margin-large);
 }
 
@@ -1114,6 +1126,11 @@ button {
 	line-height: 1.2rem;
 }
 
+.article-comments-list .pingback .comment-body {
+	font-size: 0.8rem;
+	font-style: italic;
+}
+
 /* Wordpress Widgets
 --------------------------------------------- */
 .widget_block {
@@ -1162,6 +1179,10 @@ button {
 	padding-left: 1em;
 	margin-top: 0;
 	margin-bottom: 0;
+}
+
+.wp-block-group ul {
+	list-style-type: square;
 }
 
 .wp-block-group li {

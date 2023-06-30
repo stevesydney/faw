@@ -16,25 +16,28 @@
 
     --viewport-width-small: 400px;
 
+    --colour-base-blue: hsl(208, 100%, 50%);
+
     --colour-bg-base: rgb(255, 255, 255);
     --colour-bg-base-mid: rgb(238, 238, 238);
     --colour-fg-base: rgb(25, 25, 25);
     --colour-fg-base-mid: rgb(42, 42, 42);
     --colour-fg-base-light: rgb(121, 121, 121);
+    --colour-fg-base-faint: rgb(195, 195, 195);
+    --colour-fg-base-ghost: rgb(219, 219, 219);
     --colour-highlight: rgb(25, 25, 25);
-    --colour-link: rgb(25, 25, 25);
-    --colour-link-hover: rgb(25, 25, 25);
-    --colour-link-focus: var(--colour-highlight);
-    --colour-link-visited: rgb(25, 25, 25);
-    --colour-link-active: rgb(25, 25, 25);
+    // --colour-link: rgb(25, 25, 25);
+    // --colour-link-hover: rgb(25, 25, 25);
+    // --colour-link-focus: var(--colour-highlight);
+    // --colour-link-visited: rgb(25, 25, 25);
+    // --colour-link-active: rgb(25, 25, 25);
 
     --hyphens: none;
     --text-align: left;
     --body-font-family: var(--font-serif);
     --body-font-size: 1rem;
     --body-line-height: 1.5;
-    --link-decoration: underline;
-    --link-decoration-hover: none;
+
 
     --hue-animation-duration: 48000ms;
 

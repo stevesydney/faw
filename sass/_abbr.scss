@@ -1,0 +1,8 @@
+abbr {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline dotted;
+        text-decoration-color: var(--colour-fg-base-faint);
+    }
+}
