@@ -138,7 +138,8 @@ add_action( 'widgets_init', 'faw_widgets_init' );
  * Enqueue scripts and styles.
  */
 function faw_scripts() {
-	wp_enqueue_style( 'faw-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'faw-style', get_stylesheet_uri(), array(), _S_VERSION, 'all' );
+	wp_enqueue_style( 'faw-print-style', get_stylesheet_directory_uri() . '/print.css', array(), _S_VERSION, 'print' );
 	wp_style_add_data( 'faw-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'faw-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );

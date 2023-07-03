@@ -1,0 +1,15 @@
+.global-sidebar,
+.global-footer,
+.global-header,
+.global-main .post-navigation,
+.article-comments,
+.article-footer,
+.article-more-link {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*# sourceMappingURL=print.css.map */
