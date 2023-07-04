@@ -2,11 +2,7 @@
     border-top: 2px solid var(--colour-fg-base);
     padding-top: var(--margin);
     padding-bottom: var(--margin);
-}
-
-@media (min-width: 600px) {
-    .global-footer {
-        padding-left: var(--margin);
-        padding-right: var(--margin);
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }

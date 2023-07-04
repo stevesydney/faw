@@ -1,6 +1,6 @@
-input[type=button],
-input[type=submit],
-button {
+input[type=button]:not(.stock),
+input[type=submit]:not(.stock),
+button:not(.stock) {
     font-family: var(--font-sans-serif);
     font-size: var(--sans-serif-title-text-size);
     font-weight: var(--sans-serif-title-text-weight);
@@ -9,9 +9,9 @@ button {
     appearance: none;
     -webkit-appearance: none;
     border-radius: 0;
-    border: 1px solid var(--colour-fg-base);
+    border: 1px solid var(--colour-fg-base-light);
     color: var(--colour-bg-base);
-    background-color: var(--colour-fg-base);
+    background-color: var(--colour-fg-base-light);
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 0;

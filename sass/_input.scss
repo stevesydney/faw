@@ -12,7 +12,7 @@ input[type=email] {
     border-top-color: var(--colour-bg-base-mid);
     border-left-color: var(--colour-bg-base-mid);
     border-right-color: var(--colour-bg-base-mid);
-    border-bottom-color: var(--colour-fg-base);
+    border-bottom-color: var(--colour-fg-base-light);
     background-color: var(--colour-bg-base-mid);
     color: var(--colour-fg-base);
     padding-left: 1em;
@@ -31,5 +31,5 @@ input[type=radio] {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
-    margin-top: 0; 
+    margin-top: 0;
 }

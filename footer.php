@@ -19,6 +19,8 @@
 			<li class="global-footer-link"><a rel="me" href="https://hci.social/@fasterandworse">Mastodon</a></li>
 			<li class="global-footer-link"><a rel="me" href="https://bsky.app/profile/fasterandworse.bsky.social">Bluesky</a></li>
 		</ul>
+
+		<button type="button" class="global-theme-toggle-button stock" id="theme-toggle-button" aria-label="Change to dark"></button>
 	</footer>
 </div>
 

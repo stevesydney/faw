@@ -193,17 +193,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Variables
 --------------------------------------------- */
 :root {
-	--max-readable-width: 34rem;
-	--max-content-width: 50rem;
 	--font-sans-serif: "Barlow", "Helvetica Neue", Helvetica, "Arimo", Arial, sans-serif;
 	--font-serif: "Libertinus", "Times New Roman", "Tinos", Times, serif;
-	--gutter: 1rem;
-	--large-gutter: 2rem;
 	--margin-small: 0.3rem;
 	--margin-medium: 0.6rem;
 	--margin: 1rem;
 	--margin-large: 2.5rem;
-	--viewport-width-small: 400px;
 	--colour-base-blue: hsl(208, 100%, 50%);
 	--colour-bg-base: rgb(255, 255, 255);
 	--colour-bg-base-mid: rgb(238, 238, 238);
@@ -212,9 +207,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--colour-fg-base-light: rgb(121, 121, 121);
 	--colour-fg-base-faint: rgb(195, 195, 195);
 	--colour-fg-base-ghost: rgb(219, 219, 219);
-	--colour-highlight: rgb(25, 25, 25);
-	--hyphens: none;
-	--text-align: left;
 	--body-font-family: var(--font-serif);
 	--body-font-size: 1rem;
 	--body-line-height: 1.5;
@@ -224,6 +216,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--sans-serif-title-text-color: var(--colour-fg-base-light);
 	--sans-serif-title-text-letter-spacing: 0.04rem;
 	--sans-serif-title-text-transform: uppercase;
+}
+
+:root[data-theme="dark"] {
+	--colour-bg-base: rgb(25, 25, 25);
+	--colour-bg-base-mid: rgb(42, 42, 42);
+	--colour-fg-base: rgb(255, 255, 255);
+	--colour-fg-base-mid: rgb(238, 238, 238);
+	--colour-fg-base-light: rgb(159, 159, 159);
+	--colour-fg-base-faint: rgb(85, 85, 85);
+	--colour-fg-base-ghost: rgb(61, 61, 61);
 }
 
 /* All
@@ -255,15 +257,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 body {
 	margin-top: var(--margin-large);
 	margin-bottom: 0;
-	margin-left: var(--gutter);
-	margin-right: var(--gutter);
+	margin-left: var(--margin);
+	margin-right: var(--margin);
 	background-color: inherit;
 }
 
 @media (min-width: 500px) {
 	body {
-		margin-left: var(--large-gutter);
-		margin-right: var(--large-gutter);
+		margin-left: var(--margin-large);
+		margin-right: var(--margin-large);
 	}
 }
 
@@ -326,7 +328,7 @@ input[type=email] {
 	border-top-color: var(--colour-bg-base-mid);
 	border-left-color: var(--colour-bg-base-mid);
 	border-right-color: var(--colour-bg-base-mid);
-	border-bottom-color: var(--colour-fg-base);
+	border-bottom-color: var(--colour-fg-base-light);
 	background-color: var(--colour-bg-base-mid);
 	color: var(--colour-fg-base);
 	padding-left: 1em;
@@ -369,9 +371,9 @@ textarea {
 	line-height: inherit;
 }
 
-input[type=button],
-input[type=submit],
-button {
+input[type=button]:not(.stock),
+input[type=submit]:not(.stock),
+button:not(.stock) {
 	font-family: var(--font-sans-serif);
 	font-size: var(--sans-serif-title-text-size);
 	font-weight: var(--sans-serif-title-text-weight);
@@ -380,9 +382,9 @@ button {
 	appearance: none;
 	-webkit-appearance: none;
 	border-radius: 0;
-	border: 1px solid var(--colour-fg-base);
+	border: 1px solid var(--colour-fg-base-light);
 	color: var(--colour-bg-base);
-	background-color: var(--colour-fg-base);
+	background-color: var(--colour-fg-base-light);
 	padding-left: 1em;
 	padding-right: 1em;
 	padding-top: 0;
@@ -592,13 +594,9 @@ button {
 	border-top: 2px solid var(--colour-fg-base);
 	padding-top: var(--margin);
 	padding-bottom: var(--margin);
-}
-
-@media (min-width: 600px) {
-	.global-footer {
-		padding-left: var(--margin);
-		padding-right: var(--margin);
-	}
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 
 .global-footer-links {
@@ -611,7 +609,7 @@ button {
 	flex-direction: column;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
 	.global-footer-links {
 		flex-direction: row;
 	}
@@ -647,7 +645,7 @@ button {
 	color: var(--colour-link-focus);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
 	.global-footer-link {
 		margin-right: var(--margin);
 	}
@@ -658,6 +656,29 @@ button {
 		margin-left: var(--margin);
 		color: var(--colour-fg-base-mid);
 	}
+}
+
+.global-theme-toggle-button {
+	appearance: none;
+	-webkit-appearance: none;
+	border-width: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	cursor: pointer;
+	background-color: transparent;
+	line-height: 1.4em;
+	font-family: var(--font-sans-serif);
+	color: var(--sans-serif-title-text-color);
+	font-size: var(--sans-serif-title-text-size);
+	font-weight: var(--sans-serif-title-text-weight);
+	text-transform: var(--sans-serif-title-text-transform);
+	letter-spacing: var(--sans-serif-title-text-letter-spacing);
 }
 
 /* Article
@@ -674,6 +695,22 @@ button {
 .article-title > a {
 	text-decoration-thickness: 3px;
 	text-decoration-color: var(--colour-fg-base-ghost);
+}
+
+.article-title > a:visited {
+	text-decoration-color: var(--colour-fg-base-ghost);
+}
+
+.article-title > a:hover {
+	text-decoration-color: var(--colour-base-blue);
+}
+
+.article-title > a:active {
+	text-decoration-color: var(--colour-base-blue);
+}
+
+.article-title > a:focus {
+	outline-color: var(--colour-base-blue);
 }
 
 @media (min-width: 500px) {
@@ -781,7 +818,7 @@ button {
 .article-content p {
 	margin-top: 0;
 	margin-bottom: var(--margin);
-	text-align: var(--text-align);
+	text-align: left;
 }
 
 .article-content ul,

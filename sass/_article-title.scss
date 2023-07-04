@@ -11,6 +11,22 @@
         text-decoration-color: var(--colour-fg-base-ghost);
     }
 
+    &>a:visited {
+        text-decoration-color: var(--colour-fg-base-ghost);
+    }
+
+    &>a:hover {
+        text-decoration-color: var(--colour-base-blue);
+    }
+
+    &>a:active {
+        text-decoration-color: var(--colour-base-blue);
+    }
+
+    &>a:focus {
+        outline-color: var(--colour-base-blue);
+    }
+
 }
 
 @media (min-width: 500px) {

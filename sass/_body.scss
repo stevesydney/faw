@@ -1,14 +1,14 @@
 body {
   margin-top: var(--margin-large);
   margin-bottom: 0;
-  margin-left: var(--gutter);
-  margin-right: var(--gutter);
+  margin-left: var(--margin);
+  margin-right: var(--margin);
   background-color: inherit;
 }
 
 @media (min-width: 500px) {
   body {
-    margin-left: var(--large-gutter);
-    margin-right: var(--large-gutter);
+    margin-left: var(--margin-large);
+    margin-right: var(--margin-large);
   }
 }

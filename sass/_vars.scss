@@ -1,20 +1,10 @@
-// https://coolors.co/170003-55000c-f2f2d9-adb262-69c14c
-
 :root {
-    --max-readable-width: 34rem;
-    --max-content-width: 50rem;
     --font-sans-serif: "Barlow", "Helvetica Neue", Helvetica, "Arimo", Arial, sans-serif;
     --font-serif: "Libertinus", "Times New Roman", "Tinos", Times, serif;
-    --gutter: 1rem;
-    --large-gutter: 2rem;
     --margin-small: 0.3rem;
     --margin-medium: 0.6rem;
     --margin: 1rem;
     --margin-large: 2.5rem;
-
-
-
-    --viewport-width-small: 400px;
 
     --colour-base-blue: hsl(208, 100%, 50%);
 
@@ -25,15 +15,7 @@
     --colour-fg-base-light: rgb(121, 121, 121);
     --colour-fg-base-faint: rgb(195, 195, 195);
     --colour-fg-base-ghost: rgb(219, 219, 219);
-    --colour-highlight: rgb(25, 25, 25);
-    // --colour-link: rgb(25, 25, 25);
-    // --colour-link-hover: rgb(25, 25, 25);
-    // --colour-link-focus: var(--colour-highlight);
-    // --colour-link-visited: rgb(25, 25, 25);
-    // --colour-link-active: rgb(25, 25, 25);
 
-    --hyphens: none;
-    --text-align: left;
     --body-font-family: var(--font-serif);
     --body-font-size: 1rem;
     --body-line-height: 1.5;
@@ -48,16 +30,12 @@
     --sans-serif-title-text-transform: uppercase;
 }
 
-// @media (prefers-color-scheme: dark) {
-//     :root:not([data-theme-preference]) {
-//         --colour-highlight: rgb(77,153,92);
-//         --colour-bg-base: rgb(25,25,25);
-//         --colour-bg-base-mid: rgba(255,255,255,0.1);
-//         --colour-fg-base: rgb(230,230,230);
-//         --colour-link: rgb(230,230,230);
-//         --colour-link-hover: rgb(230,230,230);
-//         --colour-link-focus: var(--colour-highlight);
-//         --colour-link-visited: rgb(230,230,230);
-//         --colour-link-active: rgb(230,230,230);
-//     }
-// }
+:root[data-theme="dark"] {
+    --colour-bg-base: rgb(25, 25, 25);
+    --colour-bg-base-mid: rgb(42, 42, 42);
+    --colour-fg-base: rgb(255, 255, 255);
+    --colour-fg-base-mid: rgb(238, 238, 238);
+    --colour-fg-base-light: rgb(159, 159, 159);
+    --colour-fg-base-faint: rgb(85, 85, 85);
+    --colour-fg-base-ghost: rgb(61, 61, 61);
+}
