@@ -85,11 +85,11 @@
 			<?php
 				if (!$hard_code_description) :
 			?>
-			<!-- <p class="<?php echo $descClass; ?>"><?php echo $faw_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p> -->
+				<p class="<?php echo $descClass; ?>"><?php echo $faw_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php
 				else :
 			?>
-			<p class="<?php echo $descClass; ?>">Design and Technology research, ideas, and opinions <span class="global-description-byline">by Stephen Farrugia</span></p>
+			<p class="<?php echo $descClass; ?>">Design &amp; technology research, ideas, &amp; opinions <span class="global-description-byline">by Stephen Farrugia</span></p>
 			<?php endif; ?>
 			
 			<?php endif; ?>

@@ -1,9 +1,4 @@
 .global-brand {
     display: flex;
-}
-
-@media (min-width: 500px) {
-    .global-brand {
-        display: initial;
-    }
+    align-items: center;
 }

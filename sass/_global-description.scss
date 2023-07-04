@@ -1,23 +1,12 @@
 .global-description {
-    font-family: var(--font-sans-serif);
-    font-weight: var(--sans-serif-title-text-weight);
-    font-size: var(--sans-serif-title-text-size);
-    color: var(--sans-serif-title-text-color);
-    letter-spacing: var(--sans-serif-title-text-letter-spacing);
-    text-transform: var(--sans-serif-title-text-transform);
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: var(--colour-fg-base-mid);
     margin-left: var(--margin);
 }
 
 .global-description-byline {
     display: block;
-}
-
-@media (min-width: 500px) {
-    .global-description {
-        margin-left: 0;
-    }
-
-    .global-description-byline {
-        display: inline;
-    }
 }

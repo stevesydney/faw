@@ -255,11 +255,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 
 body {
-	margin-top: var(--margin-large);
+	margin-top: var(--margin);
 	margin-bottom: 0;
 	margin-left: var(--margin);
 	margin-right: var(--margin);
 	background-color: inherit;
+}
+
+body.home {
+	margin-top: var(--margin-large);
 }
 
 @media (min-width: 500px) {
@@ -437,17 +441,16 @@ button:not(.stock) {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+	margin-bottom: var(--margin);
+}
+
+.home .global-header {
 	margin-bottom: var(--margin-large);
 }
 
 .global-brand {
 	display: flex;
-}
-
-@media (min-width: 500px) {
-	.global-brand {
-		display: initial;
-	}
+	align-items: center;
 }
 
 .global-menu {
@@ -473,26 +476,16 @@ button:not(.stock) {
 }
 
 .global-description {
-	font-family: var(--font-sans-serif);
-	font-weight: var(--sans-serif-title-text-weight);
-	font-size: var(--sans-serif-title-text-size);
-	color: var(--sans-serif-title-text-color);
-	letter-spacing: var(--sans-serif-title-text-letter-spacing);
-	text-transform: var(--sans-serif-title-text-transform);
+	font-family: var(--font-serif);
+	font-weight: 400;
+	font-size: 0.8rem;
+	font-style: italic;
+	color: var(--colour-fg-base-mid);
 	margin-left: var(--margin);
 }
 
 .global-description-byline {
 	display: block;
-}
-
-@media (min-width: 500px) {
-	.global-description {
-		margin-left: 0;
-	}
-	.global-description-byline {
-		display: inline;
-	}
 }
 
 .global-main {
