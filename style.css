@@ -228,6 +228,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--colour-fg-base-ghost: rgb(61, 61, 61);
 }
 
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme]) {
+		--colour-bg-base: rgb(25, 25, 25);
+		--colour-bg-base-mid: rgb(42, 42, 42);
+		--colour-fg-base: rgb(255, 255, 255);
+		--colour-fg-base-mid: rgb(238, 238, 238);
+		--colour-fg-base-light: rgb(159, 159, 159);
+		--colour-fg-base-faint: rgb(85, 85, 85);
+		--colour-fg-base-ghost: rgb(61, 61, 61);
+	}
+}
+
 /* All
 --------------------------------------------- */
 :root {
