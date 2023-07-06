@@ -30,9 +30,7 @@
 			<div class="article-meta">
 				<?php
 				faw_posted_on();
-				if ( is_singular() ) :
-					faw_posted_by();
-				endif;
+				faw_posted_by();
 				?>
 			</div>
 		<?php endif; ?>

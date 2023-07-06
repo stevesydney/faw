@@ -56,7 +56,12 @@ if ( ! function_exists( 'faw_posted_by' ) ) :
 			'<span class="article-author-name" itemprop="author">' . esc_html( get_the_author() ) . '</span>'
 		);
 
-		echo '<span class="article-author"> ' . $byline . '</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		$author_class = '';
+		if ( is_home() ) :
+			$author_class = ' hide-visual';
+		endif;
+
+		echo '<span class="article-author' . $author_class . '"> ' . $byline . '</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 	}
 endif;
