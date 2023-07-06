@@ -13,15 +13,15 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<link rel="shortcut icon" href="<?php echo get_theme_file_uri( 'favicon.ico' ) ?>">
-	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_theme_file_uri( 'apple-touch-icon.png' ) ?>">
-	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_theme_file_uri( 'favicon-32x32.png' ) ?>">
-	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_theme_file_uri( 'favicon-16x16.png' ) ?>">
-	<meta name="description" content="<?php bloginfo( 'description' )?>">
-	<?php wp_head(); ?>
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="shortcut icon" href="<?php echo get_theme_file_uri( 'favicon.ico' ) ?>">
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_theme_file_uri( 'apple-touch-icon.png' ) ?>">
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_theme_file_uri( 'favicon-32x32.png' ) ?>">
+<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_theme_file_uri( 'favicon-16x16.png' ) ?>">
+<meta name="description" content="<?php bloginfo( 'description' )?>">
+<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
