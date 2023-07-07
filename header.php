@@ -20,8 +20,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_theme_file_uri( 'apple-touch-icon.png' ) ?>">
 <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_theme_file_uri( 'favicon-32x32.png' ) ?>">
 <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_theme_file_uri( 'favicon-16x16.png' ) ?>">
-<?php if (has_excerpt()) : ?>
-<meta name="description" content="<?php echo get_the_excerpt() ?>">
+<?php if (is_singular() && has_excerpt()) : ?>
+<meta name="description" content="<?php echo esc_attr(get_the_excerpt()) ?>">
 <?php else : ?> 
 <meta name="description" content="<?php bloginfo( 'description' )?>">
 <?php endif; ?>
