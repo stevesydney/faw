@@ -1109,7 +1109,8 @@ button:not(.stock) {
 	margin-bottom: var(--margin);
 }
 
-.article-comments-list .comment .comment-body {
+.article-comments-list .comment .comment-body,
+.article-comments-list .pingback .comment-body {
 	margin-bottom: var(--margin-small);
 }
 
