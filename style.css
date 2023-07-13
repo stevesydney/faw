@@ -1036,81 +1036,14 @@ button:not(.stock) {
 	margin-bottom: var(--margin);
 }
 
-.article-comments-list,
-.article-comments-list ol {
+.article-comments-list {
 	margin-top: 0;
 	margin-bottom: 0;
 	list-style-type: none;
-}
-
-.article-comments-list {
 	padding-left: 0;
 }
 
-.article-comments-list ol {
-	padding-left: var(--margin-small);
-	border-left: 1px solid var(--colour-bg-base-mid);
-	position: relative;
-	padding-bottom: var(--margin-small);
-	margin-bottom: var(--margin-small);
-}
-
-.article-comments-list ol::after {
-	content: "";
-	position: absolute;
-	width: var(--margin);
-	height: 1px;
-	left: 0;
-	bottom: 0;
-	background: linear-gradient(90deg, var(--colour-bg-base-mid) 0%, transparent 100%);
-}
-
-.article-comments-list > .comment > ol > .comment > .comment-respond {
-	margin-left: calc(-1px - var(--margin-small));
-}
-
-.article-comments-list > .comment > ol > .comment > ol > .comment > .comment-respond {
-	margin-left: calc((-1px - var(--margin-small)) * 2);
-}
-
-.article-comments-list > .comment > ol > .comment > ol > .comment > ol > .comment > .comment-respond {
-	margin-left: calc((-1px - var(--margin-small)) * 3);
-}
-
-.article-comments-list > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > .comment-respond {
-	margin-left: calc((-1px - var(--margin-small)) * 4);
-}
-
-.article-comments-list > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > .comment-respond {
-	margin-left: calc((-1px - var(--margin-small)) * 5);
-}
-
-.article-comments-list > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > .comment-respond {
-	margin-left: calc((-1px - var(--margin-small)) * 6);
-}
-
-.article-comments-list > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > .comment-respond {
-	margin-left: calc((-1px - var(--margin-small)) * 7);
-}
-
-.article-comments-list > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > .comment-respond {
-	margin-left: calc((-1px - var(--margin-small)) * 8);
-}
-
-.article-comments-list > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > .comment-respond {
-	margin-left: calc((-1px - var(--margin-small)) * 9);
-}
-
-.article-comments-list > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > ol > .comment > .comment-respond {
-	margin-left: calc((-1px - var(--margin-small)) * 10);
-}
-
-.article-comments-list .comment:not(:last-of-type) {
-	margin-bottom: var(--margin);
-}
-
-.article-comments-list .comment .comment-body,
-.article-comments-list .pingback .comment-body {
+.article-comments-list .comment-body {
 	margin-bottom: var(--margin-small);
 }
 
