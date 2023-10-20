@@ -1,4 +1,4 @@
 .article-comments {
-    border-top: 2px solid var(--colour-fg-base-faint);
-    padding-top: var(--margin-large);
+    border-top: 2px solid var(--colour-fg-base-faint, rgb(195, 195, 195));
+    padding-top: var(--margin-large, 2.5rem);
 }

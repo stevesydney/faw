@@ -1,18 +1,18 @@
 body {
-  margin-top: var(--margin);
+  margin-top: var(--margin, 1rem);
   margin-bottom: 0;
-  margin-left: var(--margin);
-  margin-right: var(--margin);
+  margin-left: var(--margin, 1rem);
+  margin-right: var(--margin, 1rem);
   background-color: inherit;
 
   &.home {
-    margin-top: var(--margin-large);
+    margin-top: var(--margin-large, 2.5rem);
   }
 }
 
 @media (min-width: 500px) {
   body {
-    margin-left: var(--margin-large);
-    margin-right: var(--margin-large);
+    margin-left: var(--margin-large, 2.5rem);
+    margin-right: var(--margin-large, 2.5rem);
   }
 }

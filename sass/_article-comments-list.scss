@@ -6,13 +6,13 @@
 }
 
 .article-comments-list .comment-body {
-    margin-bottom: var(--margin-small);
+    margin-bottom: var(--margin-small, 0.3rem);
 }
 
 .article-comments-list .comment .comment-content {
     font-size: 0.8rem;
-    padding-top: var(--margin-small);
-    margin-bottom: var(--margin-small);
+    padding-top: var(--margin-small, 0.3rem);
+    margin-bottom: var(--margin-small, 0.3rem);
 }
 
 .article-comments-list .comment .comment-content p {
@@ -21,11 +21,11 @@
 }
 
 .article-comments-list .comment .comment-content p:not(:last-of-type) {
-    margin-bottom: var(--margin);
+    margin-bottom: var(--margin, 1rem);
 }
 
 .article-comments-list .comment .comment-author {
-    font-family: var(--font-sans-serif);
+    font-family: var(--font-sans-serif, sans-serif);
     font-weight: 400;
     font-size: 0.8rem;
 }
@@ -35,18 +35,18 @@
 }
 
 .article-comments-list .comment .comment-metadata {
-    font-family: var(--font-sans-serif);
+    font-family: var(--font-sans-serif, sans-serif);
     font-weight: 400;
     font-size: 0.6rem;
     opacity: 0.6;
 }
 
 .article-comments-list .comment .comment-reply-link {
-    font-family: var(--font-sans-serif);
+    font-family: var(--font-sans-serif, sans-serif);
     font-weight: 400;
     font-size: 0.6rem;
     text-transform: uppercase;
-    line-height: 1.2rem;
+    line-height: 1.2;
 }
 
 .article-comments-list .comment .reply {
@@ -58,8 +58,8 @@
 .article-comments-list .comment .reply::before {
     font-size: 0.8rem;
     content: "💬";
-    margin-right: var(--margin-small);
-    line-height: 1.2rem;
+    margin-right: var(--margin-small, 0.3rem);
+    line-height: 1.2;
 }
 
 .article-comments-list .pingback .comment-body {

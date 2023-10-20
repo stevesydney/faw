@@ -3,18 +3,18 @@ input[type=search],
 input[type=password],
 input[type=url],
 input[type=email] {
-    font-family: var(--font-serif);
+    font-family: var(--font-serif, serif);
     font-weight: 400;
     font-size: 0.8rem;
     border-width: 1px;
     border-radius: 0;
     border-style: solid;
-    border-top-color: var(--colour-bg-base-mid);
-    border-left-color: var(--colour-bg-base-mid);
-    border-right-color: var(--colour-bg-base-mid);
-    border-bottom-color: var(--colour-fg-base-light);
-    background-color: var(--colour-bg-base-mid);
-    color: var(--colour-fg-base);
+    border-top-color: var(--colour-bg-base-mid-alt, rgb(239, 239, 239));
+    border-left-color: var(--colour-bg-base-mid-alt, rgb(239, 239, 239));
+    border-right-color: var(--colour-bg-base-mid-alt, rgb(239, 239, 239));
+    border-bottom-color: var(--colour-fg-base-light, rgb(121, 121, 121));
+    background-color: var(--colour-bg-base-mid, rgb(238, 238, 238));
+    color: var(--colour-fg-base, rgb(25, 25, 25));
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 0;
@@ -23,7 +23,7 @@ input[type=email] {
     margin-right: 0;
     margin-bottom: 0;
     margin-top: 0;
-    line-height: 1.8rem;
+    line-height: 34px;
 }
 
 input[type=checkbox],

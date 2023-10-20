@@ -1,8 +1,8 @@
 .article-content {
-  font-family: var(--body-font-family);
-  font-size: var(--body-font-size);
-  line-height: var(--body-line-height);
-  margin-bottom: var(--margin);
+  font-family: var(--body-font-family, serif);
+  font-size: var(--body-font-size, 1rem);
+  line-height: var(--body-line-height, 1.5);
+  margin-bottom: var(--margin, 1rem);
 
   &>*:last-child {
     margin-bottom: 0;
@@ -14,10 +14,10 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-serif);
+    font-family: var(--font-serif, serif);
     font-weight: 400;
     margin-top: 0;
-    margin-bottom: var(--margin-medium);
+    margin-bottom: var(--margin-medium, 0.6rem);
     line-height: 1.2;
 
     strong,
@@ -26,7 +26,7 @@
     }
 
     &:not(:first-child) {
-      padding-top: var(--margin);
+      padding-top: var(--margin, 1rem);
     }
   }
 
@@ -57,33 +57,33 @@
 
   p {
     margin-top: 0;
-    margin-bottom: var(--margin);
+    margin-bottom: var(--margin, 1rem);
     text-align: left;
   }
 
   ul,
   ol {
-    padding-left: var(--margin);
-    margin-bottom: var(--margin);
+    padding-left: var(--margin, 1rem);
+    margin-bottom: var(--margin, 1rem);
   }
 
   li {
-    margin-bottom: var(--margin-small);
+    margin-bottom: var(--margin-small, 0.3rem);
   }
 
   hr {
     border: 0;
     height: 1px;
     background-color: currentColor;
-    margin-top: var(--margin-large);
-    margin-bottom: var(--margin-large);
+    margin-top: var(--margin-large, 2.5rem);
+    margin-bottom: var(--margin-large, 2.5rem);
   }
 
   blockquote {
-    padding-left: var(--margin);
+    padding-left: var(--margin, 1rem);
     padding-right: 0;
-    margin-top: var(--margin);
-    margin-bottom: var(--margin);
+    margin-top: var(--margin, 1rem);
+    margin-bottom: var(--margin, 1rem);
     margin-left: 0;
     margin-right: 0;
     border-left: 2px solid currentColor;
@@ -96,11 +96,11 @@
 
   cite {
     display: block;
-    font-family: var(--font-serif);
+    font-family: var(--font-serif, serif);
     font-weight: 400;
     font-size: 0.8rem;
-    color: var(--colour-fg-base-light);
-    padding-top: var(--margin);
+    color: var(--colour-fg-base-light, rgb(121, 121, 121));
+    padding-top: var(--margin, 1rem);
     font-style: normal;
 
     & a {
@@ -115,12 +115,11 @@
 
   th,
   tfoot td {
-    font-family: var(--font-sans-serif);
-    font-family: var(--font-sans-serif);
-    font-weight: var(--sans-serif-title-text-weight);
-    font-size: var(--sans-serif-title-text-size);
-    letter-spacing: var(--sans-serif-title-text-letter-spacing);
-    text-transform: var(--sans-serif-title-text-transform);
+    font-family: var(--font-sans-serif, sans-serif);
+    font-weight: var(--sans-serif-title-text-weight, 700);
+    font-size: var(--sans-serif-title-text-size, 0.7rem);
+    letter-spacing: var(--sans-serif-title-text-letter-spacing, 0.04rem);
+    text-transform: var(--sans-serif-title-text-transform, uppercase);
     border-width: 1px;
     border-style: solid;
     border-color: currentColor;
@@ -138,11 +137,10 @@
   }
 
   td {
-    font-family: var(--font-sans-serif);
-    font-family: var(--font-sans-serif);
-    font-size: var(--sans-serif-title-text-size);
-    letter-spacing: var(--sans-serif-title-text-letter-spacing);
-    text-transform: var(--sans-serif-title-text-transform);
+    font-family: var(--font-sans-serif, sans-serif);
+    font-size: var(--sans-serif-title-text-size, 0.7rem);
+    letter-spacing: var(--sans-serif-title-text-letter-spacing, 0.04rem);
+    text-transform: var(--sans-serif-title-text-transform, uppercase);
     border-width: 1px;
     border-style: solid;
     border-color: currentColor;
@@ -152,7 +150,7 @@
   }
 
   caption {
-    font-family: var(--font-sans-serif);
+    font-family: var(--font-sans-serif, sans-serif);
     padding-top: 1em;
     caption-side: bottom;
     text-align: left;
@@ -161,21 +159,21 @@
 
   figure {
     overflow: auto;
-    margin-bottom: var(--margin-large);
+    margin-bottom: var(--margin-large, 2.5rem);
 
     &:not(:first-child) {
-      padding-top: var(--margin);
+      padding-top: var(--margin, 1rem);
     }
   }
 
   figcaption {
-    font-family: var(--font-sans-serif);
-    font-weight: var(--sans-serif-title-text-weight);
-    font-size: var(--sans-serif-title-text-size);
-    color: var(--sans-serif-title-text-color);
-    letter-spacing: var(--sans-serif-title-text-letter-spacing);
-    text-transform: var(--sans-serif-title-text-transform);
-    padding-top: var(--margin);
+    font-family: var(--font-sans-serif, sans-serif);
+    font-weight: var(--sans-serif-title-text-weight, 700);
+    font-size: var(--sans-serif-title-text-size, 0.7rem);
+    color: var(--sans-serif-title-text-color, rgb(121, 121, 121));
+    letter-spacing: var(--sans-serif-title-text-letter-spacing, 0.04rem);
+    text-transform: var(--sans-serif-title-text-transform, uppercase);
+    padding-top: var(--margin, 1rem);
     text-align: center;
   }
 
@@ -186,7 +184,7 @@
   }
 
   sup[id] {
-    font-family: var(--font-sans-serif);
+    font-family: var(--font-sans-serif, sans-serif);
     font-size: 0.8em;
     margin-left: 0.1em;
   }
@@ -203,7 +201,7 @@
     h4,
     h5,
     h6 {
-      margin-bottom: var(--margin);
+      margin-bottom: var(--margin, 1rem);
     }
 
     h1 {
@@ -216,7 +214,7 @@
 
     ul,
     ol {
-      padding-left: var(--margin-large);
+      padding-left: var(--margin-large, 2.5rem);
     }
 
   }

@@ -1,10 +1,10 @@
 .global-description {
-    font-family: var(--font-serif);
+    font-family: var(--font-serif, serif);
     font-weight: 400;
     font-size: 0.8rem;
     font-style: italic;
-    color: var(--colour-fg-base-mid);
-    margin-left: var(--margin);
+    color: var(--colour-fg-base-mid, rgb(42, 42, 42));
+    margin-left: var(--margin, 1rem);
 }
 
 .global-description-byline {

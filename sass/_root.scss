@@ -1,11 +1,21 @@
 :root {
-    font-family: var(--font-serif);
+    font-family: var(--font-serif, serif);
     font-weight: 400;
     font-size: 19px;
-    background-color: var(--colour-bg-base);
-    color: var(--colour-fg-base);
+    background-color: var(--colour-bg-base, #ffffff);
+    color: var(--colour-fg-base, rgb(25, 25, 25));
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     line-height: 1.4;
 }
+
+// @supports (-webkit-font-smoothing: antialiased) {
+//     :root {
+//         -webkit-font-smoothing: antialiased;
+//     }
+// }
+
+// @supports (-moz-osx-font-smoothing: grayscale) {
+//     :root {
+//         -moz-osx-font-smoothing: grayscale;
+//     }
+// }

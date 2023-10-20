@@ -38,8 +38,8 @@
 		the_custom_logo();
 		?>
 		<div class="global-brand">
-			<div class="global-logo" aria-hidden="true" focusable="false">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" aria-hidden="true" focusable="false" tabindex="-1">
+			<div class="global-logo" aria-hidden="true">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" aria-hidden="true" tabindex="-1">
 					<div class="global-logo-bar-container">
 						<div class="global-logo-bar global-logo-bar-1">
 							<div class="global-logo-letter">

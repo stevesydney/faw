@@ -1,7 +1,7 @@
 .hide-visual,
 .screen-reader-text {
     border: 0;
-    clip: rect(0 0 0 0);
+    clip-path: inset(0 0 0 0);
     height: 1px;
     margin: -1px;
     overflow: hidden;
@@ -13,7 +13,7 @@
 
 .hide-visual:focus,
 .screen-reader-text:focus {
-    clip: auto;
+    clip-path: none;
     height: auto;
     margin: 0;
     overflow: visible;

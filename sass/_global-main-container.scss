@@ -1,5 +1,5 @@
 .global-main-container {
-    margin-bottom: var(--margin-large);
+    margin-bottom: var(--margin-large, 2.5rem);
 }
 
 @media (min-width: 800px) {

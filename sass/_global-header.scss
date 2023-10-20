@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: var(--margin);
+    margin-bottom: var(--margin, 1rem);
 }
 
 .home .global-header {
-    margin-bottom: var(--margin-large);
+    margin-bottom: var(--margin-large, 2.5rem);
 }

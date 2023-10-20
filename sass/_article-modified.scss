@@ -1,8 +1,8 @@
 .article-modified {
-    font-family: var(--font-sans-serif);
-    color: var(--sans-serif-title-text-color);
-    font-size: var(--sans-serif-title-text-size);
-    font-weight: var(--sans-serif-title-text-weight);
-    text-transform: var(--sans-serif-title-text-transform);
-    letter-spacing: var(--sans-serif-title-text-letter-spacing);
+    font-family: var(--font-sans-serif, sans-serif);
+    color: var(--sans-serif-title-text-color, rgb(121, 121, 121));
+    font-size: var(--sans-serif-title-text-size, 0.7rem);
+    font-weight: var(--sans-serif-title-text-weight, 700);
+    text-transform: var(--sans-serif-title-text-transform, uppercase);
+    letter-spacing: var(--sans-serif-title-text-letter-spacing, 0.04rem);
 }

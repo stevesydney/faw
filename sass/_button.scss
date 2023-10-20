@@ -1,17 +1,16 @@
 input[type=button]:not(.stock),
 input[type=submit]:not(.stock),
 button:not(.stock) {
-    font-family: var(--font-sans-serif);
-    font-size: var(--sans-serif-title-text-size);
-    font-weight: var(--sans-serif-title-text-weight);
-    text-transform: var(--sans-serif-title-text-transform);
-    letter-spacing: var(--sans-serif-title-text-letter-spacing);
+    font-family: var(--font-sans-serif, sans-serif);
+    font-size: var(--sans-serif-title-text-size, 0.7rem);
+    font-weight: var(--sans-serif-title-text-weight, 700);
+    text-transform: var(--sans-serif-title-text-transform, uppercase);
+    letter-spacing: var(--sans-serif-title-text-letter-spacing, 0.04rem);
     appearance: none;
-    -webkit-appearance: none;
     border-radius: 0;
-    border: 1px solid var(--colour-fg-base-light);
-    color: var(--colour-bg-base);
-    background-color: var(--colour-fg-base-light);
+    border: 1px solid var(--colour-fg-base-light, rgb(121, 121, 121));
+    color: var(--colour-bg-base, #ffffff);
+    background-color: var(--colour-fg-base-light, rgb(121, 121, 121));
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 0;
@@ -20,5 +19,13 @@ button:not(.stock) {
     margin-right: 0;
     margin-top: 0;
     margin-bottom: 0;
-    line-height: 1.8rem;
+    line-height: 34px;
 }
+
+// @supports (-webkit-appearance: none) {
+//     input[type=button]:not(.stock),
+//     input[type=submit]:not(.stock),
+//     button:not(.stock) {
+//         -webkit-appearance: none;
+//     }
+// }

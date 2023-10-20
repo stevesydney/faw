@@ -1,15 +1,15 @@
 .comment-respond {
-    padding-top: var(--margin);
-    padding-bottom: var(--margin);
-    background-color: var(--colour-bg-base);
+    padding-top: var(--margin, 1rem);
+    padding-bottom: var(--margin, 1rem);
+    background-color: var(--colour-bg-base, #ffffff);
 }
 
 .comment-reply-title {
-    font-family: var(--font-sans-serif);
+    font-family: var(--font-sans-serif, sans-serif);
     font-weight: 700;
     font-size: 0.8rem;
     margin-top: 0;
-    margin-bottom: var(--margin);
+    margin-bottom: var(--margin, 1rem);
     display: flex;
     justify-content: space-between;
 }
@@ -21,16 +21,16 @@
 
 .comment-notes,
 .logged-in-as {
-    font-family: var(--font-sans-serif);
+    font-family: var(--font-sans-serif, sans-serif);
     font-weight: 400;
     font-size: 0.8rem;
     margin-top: 0;
-    margin-bottom: var(--margin);
+    margin-bottom: var(--margin, 1rem);
 }
 
 .comment-form-comment {
     margin-top: 0;
-    margin-bottom: var(--margin);
+    margin-bottom: var(--margin, 1rem);
     display: flex;
     flex-direction: column;
 }
@@ -39,18 +39,18 @@
 .comment-form-email,
 .comment-form-url {
     margin-top: 0;
-    margin-bottom: var(--margin);
+    margin-bottom: var(--margin, 1rem);
     display: flex;
     flex-direction: column;
     max-width: 400px;
 }
 
 [class^=comment-form-] label {
-    font-family: var(--font-sans-serif);
+    font-family: var(--font-sans-serif, sans-serif);
     font-weight: 400;
     font-size: 0.8rem;
     margin-top: 0;
-    margin-bottom: var(--margin-small);
+    margin-bottom: var(--margin-small, 0.3rem);
 }
 
 .comment-form-comment textarea,
@@ -63,18 +63,18 @@
 
 .comment-form-cookies-consent {
     margin-top: 0;
-    margin-bottom: var(--margin);
+    margin-bottom: var(--margin, 1rem);
 }
 
 .comment-form-cookies-consent input[type=checkbox] {
-    margin-bottom: var(--margin-small);
-    margin-right: var(--margin-small);
+    margin-bottom: var(--margin-small, 0.3rem);
+    margin-right: var(--margin-small, 0.3rem);
 }
 
 .akismet_comment_form_privacy_notice {
-    font-family: var(--font-sans-serif);
+    font-family: var(--font-sans-serif, sans-serif);
     font-weight: 400;
     font-size: 0.8rem;
     margin-top: 0;
-    margin-bottom: var(--margin);
+    margin-bottom: var(--margin, 1rem);
 }

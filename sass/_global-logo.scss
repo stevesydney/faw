@@ -36,7 +36,7 @@
     position: relative;
     animation-delay: 0ms;
     animation-direction: alternate;
-    animation-duration: var(--hue-animation-duration);
+    animation-duration: var(--hue-animation-duration, 48000ms);
     animation-timing-function: ease-in-out;
     animation-fill-mode: both;
     animation-iteration-count: infinite;

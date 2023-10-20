@@ -1,10 +1,10 @@
 .global-footer-link {
-    font-family: var(--font-sans-serif);
-    color: var(--sans-serif-title-text-color);
-    font-size: var(--sans-serif-title-text-size);
-    font-weight: var(--sans-serif-title-text-weight);
-    text-transform: var(--sans-serif-title-text-transform);
-    letter-spacing: var(--sans-serif-title-text-letter-spacing);
+    font-family: var(--font-sans-serif, sans-serif);
+    color: var(--sans-serif-title-text-color, rgb(121, 121, 121));
+    font-size: var(--sans-serif-title-text-size, 0.7rem);
+    font-weight: var(--sans-serif-title-text-weight, 700);
+    text-transform: var(--sans-serif-title-text-transform, uppercase);
+    letter-spacing: var(--sans-serif-title-text-letter-spacing, 0.04rem);
 
     &>a,
     &>a:link {
@@ -12,19 +12,19 @@
     }
 
     &>a:visited {
-        color: var(--colour-link-visited);
+        color: currentColor;
     }
 
     &>a:hover {
-        color: var(--colour-link-hover);
+        color: currentColor;
     }
 
     &>a:active {
-        color: var(--colour-link-active);
+        color: currentColor;
     }
 
     &>a:focus {
-        color: var(--colour-link-focus);
+        color: currentColor;
     }
 
 }
@@ -33,15 +33,15 @@
 
 @media (min-width: 800px) {
     .global-footer-link {
-        margin-right: var(--margin);
+        margin-right: var(--margin, 1rem);
     }
 
     .global-footer-link:not(:last-of-type)::after {
         content: "/";
         font-family: inherit;
         font-size: inherit;
-        margin-left: var(--margin);
-        color: var(--colour-fg-base-mid);
+        margin-left: var(--margin, 1rem);
+        color: var(--colour-fg-base-mid, rgb(42, 42, 42));
     }
 
 }

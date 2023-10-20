@@ -1,6 +1,6 @@
 .global-theme-toggle-button {
     appearance: none;
-    -webkit-appearance: none;
+    // -webkit-appearance: none;
     border-width: 0;
     padding-left: 0;
     padding-right: 0;
@@ -12,11 +12,11 @@
     margin-bottom: 0;
     cursor: pointer;
     background-color: transparent;
-    line-height: 1.4em;
-    font-family: var(--font-sans-serif);
-    color: var(--sans-serif-title-text-color);
-    font-size: var(--sans-serif-title-text-size);
-    font-weight: var(--sans-serif-title-text-weight);
-    text-transform: var(--sans-serif-title-text-transform);
-    letter-spacing: var(--sans-serif-title-text-letter-spacing);
+    line-height: 1.4;
+    font-family: var(--font-sans-serif, sans-serif);
+    color: var(--sans-serif-title-text-color, rgb(121, 121, 121));
+    font-size: var(--sans-serif-title-text-size, 0.7rem);
+    font-weight: var(--sans-serif-title-text-weight, 700);
+    text-transform: var(--sans-serif-title-text-transform, uppercase);
+    letter-spacing: var(--sans-serif-title-text-letter-spacing, 0.04rem);
 }

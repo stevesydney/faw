@@ -1,7 +1,7 @@
 .global-footer {
-    border-top: 2px solid var(--colour-fg-base);
-    padding-top: var(--margin);
-    padding-bottom: var(--margin);
+    border-top: 2px solid var(--colour-fg-base, rgb(25, 25, 25));
+    padding-top: var(--margin, 1rem);
+    padding-bottom: var(--margin, 1rem);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;

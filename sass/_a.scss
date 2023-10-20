@@ -4,7 +4,7 @@ a {
   text-decoration-style: solid;
   text-underline-offset: 0.2em;
   text-decoration-thickness: 1px;
-  text-decoration-color: var(--colour-fg-base-faint);
+  text-decoration-color: var(--colour-fg-base-faint, rgb(195, 195, 195));
   color: currentColor;
 
 }
@@ -15,21 +15,21 @@ a:link {
 
 a:visited {
   color: currentColor;
-  text-decoration-color: var(--colour-fg-base-ghost);
+  text-decoration-color: var(--colour-fg-base-ghost, rgb(219, 219, 219));
 }
 
 a:hover {
   color: currentColor;
-  text-decoration-color: var(--colour-base-blue);
+  text-decoration-color: var(--colour-base-blue, hsl(208, 100%, 50%));
 }
 
 a:active {
   color: currentColor;
-  text-decoration-color: var(--colour-base-blue);
+  text-decoration-color: var(--colour-base-blue, hsl(208, 100%, 50%));
 }
 
 
 a:focus {
   color: currentColor;
-  outline-color: var(--colour-base-blue);
+  outline-color: var(--colour-base-blue, hsl(208, 100%, 50%));
 }

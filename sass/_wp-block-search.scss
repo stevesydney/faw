@@ -1,14 +1,14 @@
 .wp-block-search {}
 
 .wp-block-search__label {
-    font-family: var(--font-sans-serif);
-    font-weight: var(--sans-serif-title-text-weight);
-    font-size: var(--sans-serif-title-text-size);
-    color: var(--sans-serif-title-text-color);
-    letter-spacing: var(--sans-serif-title-text-letter-spacing);
-    text-transform: var(--sans-serif-title-text-transform);
+    font-family: var(--font-sans-serif, sans-serif);
+    font-weight: var(--sans-serif-title-text-weight, 700);
+    font-size: var(--sans-serif-title-text-size, 0.7rem);
+    color: var(--sans-serif-title-text-color, rgb(121, 121, 121));
+    letter-spacing: var(--sans-serif-title-text-letter-spacing, 0.04rem);
+    text-transform: var(--sans-serif-title-text-transform, uppercase);
     display: block;
-    margin-bottom: var(--margin-small);
+    margin-bottom: var(--margin-small, 0.3rem);
 }
 
 .wp-block-search__inside-wrapper {

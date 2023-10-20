@@ -1,5 +1,5 @@
 .post-navigation {
-    margin-bottom: var(--margin-large);
+    margin-bottom: var(--margin-large, 2.5rem);
 }
 
 .post-navigation .nav-links {
@@ -19,12 +19,12 @@
 .post-navigation .nav-links .nav-previous,
 .post-navigation .nav-links .nav-next {
 
-    font-family: var(--font-sans-serif);
-    font-weight: var(--sans-serif-title-text-weight);
-    font-size: var(--sans-serif-title-text-size);
-    color: var(--sans-serif-title-text-color);
-    letter-spacing: var(--sans-serif-title-text-letter-spacing);
-    text-transform: var(--sans-serif-title-text-transform);
+    font-family: var(--font-sans-serif, sans-serif);
+    font-weight: var(--sans-serif-title-text-weight, 700);
+    font-size: var(--sans-serif-title-text-size, 0.7rem);
+    color: var(--sans-serif-title-text-color, rgb(121, 121, 121));
+    letter-spacing: var(--sans-serif-title-text-letter-spacing, 0.04rem);
+    text-transform: var(--sans-serif-title-text-transform, uppercase);
 
     & .nav-title {
         color: inherit;
@@ -45,27 +45,27 @@
     }
 
     & a:visited .nav-title {
-        color: var(--colour-link-visited);
+        color: currentColor;
     }
 
     & a:focus .nav-title {
-        color: var(--colour-link-focus);
+        color: currentColor;
         text-decoration: underline;
-        outline-color: var(--colour-fg-base);
+        outline-color: var(--colour-fg-base, rgb(25, 25, 25));
     }
 
     & a:hover .nav-title {
-        color: var(--colour-link-hover);
+        color: currentColor;
         text-decoration: underline;
     }
 
     & a:active .nav-title {
-        color: var(--colour-link-active);
+        color: currentColor;
     }
 
     & .nav-subtitle {
         border: 0;
-        clip: rect(0 0 0 0);
+        clip-path: inset(0 0 0 0);
         height: 1px;
         margin: -1px;
         overflow: hidden;
@@ -76,7 +76,7 @@
     }
 
     & .nav-subtitle:focus {
-        clip: auto;
+        clip-path: none;
         height: auto;
         margin: 0;
         overflow: visible;

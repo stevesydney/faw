@@ -1,16 +1,16 @@
 textarea {
-    font-family: var(--font-serif);
+    font-family: var(--font-serif, serif);
     font-weight: 400;
     font-size: 0.8rem;
     border-width: 1px;
     border-style: solid;
     border-radius: 0;
-    border-top-color: var(--colour-bg-base-mid);
-    border-left-color: var(--colour-bg-base-mid);
-    border-right-color: var(--colour-bg-base-mid);
-    border-bottom-color: var(--colour-fg-base);
-    background-color: var(--colour-bg-base-mid);
-    color: var(--colour-fg-base);
+    border-top-color: var(--colour-bg-base-mid-alt, rgb(239, 239, 239));
+    border-left-color: var(--colour-bg-base-mid-alt, rgb(239, 239, 239));
+    border-right-color: var(--colour-bg-base-mid-alt, rgb(239, 239, 239));
+    border-bottom-color: var(--colour-fg-base, rgb(25, 25, 25));
+    background-color: var(--colour-bg-base-mid, rgb(238, 238, 238));
+    color: var(--colour-fg-base, rgb(25, 25, 25));
     padding: 1em;
     margin-left: 0;
     margin-right: 0;

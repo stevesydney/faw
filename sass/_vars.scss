@@ -10,13 +10,14 @@
 
     --colour-bg-base: rgb(255, 255, 255);
     --colour-bg-base-mid: rgb(238, 238, 238);
+    --colour-bg-base-mid-alt: rgb(239, 239, 239);
     --colour-fg-base: rgb(25, 25, 25);
     --colour-fg-base-mid: rgb(42, 42, 42);
     --colour-fg-base-light: rgb(121, 121, 121);
     --colour-fg-base-faint: rgb(195, 195, 195);
     --colour-fg-base-ghost: rgb(219, 219, 219);
 
-    --body-font-family: var(--font-serif);
+    --body-font-family: var(--font-serif, serif);
     --body-font-size: 1rem;
     --body-line-height: 1.5;
 
@@ -25,7 +26,7 @@
 
     --sans-serif-title-text-size: 0.7rem;
     --sans-serif-title-text-weight: 700;
-    --sans-serif-title-text-color: var(--colour-fg-base-light);
+    --sans-serif-title-text-color: var(--colour-fg-base-light, rgb(121, 121, 121));
     --sans-serif-title-text-letter-spacing: 0.04rem;
     --sans-serif-title-text-transform: uppercase;
 }
@@ -33,6 +34,7 @@
 :root[data-theme="dark"] {
     --colour-bg-base: rgb(25, 25, 25);
     --colour-bg-base-mid: rgb(42, 42, 42);
+    --colour-bg-base-mid-alt: rgb(41, 41, 41);
     --colour-fg-base: rgb(255, 255, 255);
     --colour-fg-base-mid: rgb(238, 238, 238);
     --colour-fg-base-light: rgb(159, 159, 159);
@@ -44,6 +46,7 @@
     :root:not([data-theme]) {
         --colour-bg-base: rgb(25, 25, 25);
         --colour-bg-base-mid: rgb(42, 42, 42);
+        --colour-bg-base-mid-alt: rgb(41, 41, 41);
         --colour-fg-base: rgb(255, 255, 255);
         --colour-fg-base-mid: rgb(238, 238, 238);
         --colour-fg-base-light: rgb(159, 159, 159);
