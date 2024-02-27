@@ -198,6 +198,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--margin-small: 0.3rem;
 	--margin-medium: 0.6rem;
 	--margin: 1rem;
+	--margin-bigger: 2rem;
 	--margin-large: 2.5rem;
 	--colour-base-blue: hsl(208, 100%, 50%);
 	--colour-bg-base: rgb(255, 255, 255);
@@ -766,7 +767,7 @@ button:not(.stock) {
 	font-family: var(--font-serif, serif);
 	font-weight: 400;
 	margin-top: 0;
-	margin-bottom: var(--margin-medium, 0.6rem);
+	margin-bottom: var(--margin-bigger, 2rem);
 	line-height: 1.2;
 }
 
@@ -821,14 +822,14 @@ button:not(.stock) {
 
 .article-content p {
 	margin-top: 0;
-	margin-bottom: var(--margin, 1rem);
+	margin-bottom: var(--margin-bigger, 2rem);
 	text-align: left;
 }
 
 .article-content ul,
 .article-content ol {
 	padding-left: var(--margin, 1rem);
-	margin-bottom: var(--margin, 1rem);
+	margin-bottom: var(--margin-bigger, 2rem);
 }
 
 .article-content li {
@@ -847,7 +848,7 @@ button:not(.stock) {
 	padding-left: var(--margin, 1rem);
 	padding-right: 0;
 	margin-top: var(--margin, 1rem);
-	margin-bottom: var(--margin, 1rem);
+	margin-bottom: var(--margin-bigger, 2rem);
 	margin-left: 0;
 	margin-right: 0;
 	border-left: 2px solid currentColor;
@@ -960,7 +961,7 @@ button:not(.stock) {
 	.article-content h4,
 	.article-content h5,
 	.article-content h6 {
-		margin-bottom: var(--margin, 1rem);
+		margin-bottom: var(--margin-bigger, 2rem);
 	}
 	.article-content h1 {
 		font-size: 1.8em;
