@@ -1048,7 +1048,7 @@ button:not(.stock) {
 .article-comments-list .comment .comment-content {
 	font-size: 0.8rem;
 	padding-top: var(--margin-small, 0.3rem);
-	margin-bottom: var(--margin-small, 0.3rem);
+	margin-bottom: var(--margin-large, 0.3rem);
 }
 
 .article-comments-list .comment .comment-content p {
