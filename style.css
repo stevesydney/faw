@@ -295,7 +295,7 @@ a {
 	text-decoration-style: solid;
 	text-underline-offset: 0.2em;
 	text-decoration-thickness: 1px;
-	text-decoration-color: var(--colour-fg-base-faint, #c3c3c3);
+	text-decoration-color: var(--colour-fg-base-light, #c3c3c3);
 	color: currentColor;
 }
 
@@ -305,7 +305,7 @@ a:link {
 
 a:visited {
 	color: currentColor;
-	text-decoration-color: var(--colour-fg-base-ghost, #dbdbdb);
+	text-decoration-color: var(--colour-fg-base-light, #dbdbdb);
 }
 
 a:hover {
@@ -1041,14 +1041,18 @@ button:not(.stock) {
 	padding-left: 0;
 }
 
+.article-comments-list .comment:not(:last-child) {
+	margin-bottom: var(--margin-large, 0.3rem);
+}
+
 .article-comments-list .comment-body {
-	margin-bottom: var(--margin-small, 0.3rem);
+	margin-bottom: 0;
 }
 
 .article-comments-list .comment .comment-content {
 	font-size: 0.8rem;
 	padding-top: var(--margin-small, 0.3rem);
-	margin-bottom: var(--margin-large, 0.3rem);
+	margin-bottom: 0;
 }
 
 .article-comments-list .comment .comment-content p {

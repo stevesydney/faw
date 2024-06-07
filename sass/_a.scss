@@ -4,7 +4,7 @@ a {
   text-decoration-style: solid;
   text-underline-offset: 0.2em;
   text-decoration-thickness: 1px;
-  text-decoration-color: var(--colour-fg-base-faint, rgb(195, 195, 195));
+  text-decoration-color: var(--colour-fg-base-light, rgb(195, 195, 195));
   color: currentColor;
 
 }
@@ -15,7 +15,7 @@ a:link {
 
 a:visited {
   color: currentColor;
-  text-decoration-color: var(--colour-fg-base-ghost, rgb(219, 219, 219));
+  text-decoration-color: var(--colour-fg-base-light, rgb(219, 219, 219));
 }
 
 a:hover {
