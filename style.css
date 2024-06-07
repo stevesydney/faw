@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*!
 Theme Name: fasterandworse
 Theme URI: http://underscores.me/
@@ -22,6 +23,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+
 /* Fonts
 --------------------------------------------- */
 @font-face {
@@ -65,126 +67,162 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Keyframes
 --------------------------------------------- */
 @keyframes saturationsA {
+
 	0% {
 		filter: saturate(70%) brightness(1);
 	}
+
 	20% {
 		filter: saturate(90%) brightness(1);
 	}
+
 	40% {
 		filter: saturate(40%) brightness(1.25);
 	}
+
 	60% {
 		filter: saturate(60%) brightness(1.1);
 	}
+
 	80% {
 		filter: saturate(40%) brightness(1.15);
 	}
+
 	100% {
 		filter: saturate(80%) brightness(1);
 	}
 }
 
 @keyframes saturationsB {
+
 	0% {
 		filter: saturate(40%) brightness(1.12);
 	}
+
 	20% {
 		filter: saturate(70%) brightness(1);
 	}
+
 	40% {
 		filter: saturate(20%) brightness(1.25);
 	}
+
 	60% {
 		filter: saturate(80%) brightness(1.01);
 	}
+
 	80% {
 		filter: saturate(30%) brightness(1.2);
 	}
+
 	100% {
 		filter: saturate(60%) brightness(1.1);
 	}
 }
 
 @keyframes saturationsC {
+
 	0% {
 		filter: saturate(80%) brightness(1.08);
 	}
+
 	20% {
 		filter: saturate(30%) brightness(1.18);
 	}
+
 	40% {
 		filter: saturate(70%) brightness(1.05);
 	}
+
 	60% {
 		filter: saturate(40%) brightness(1.15);
 	}
+
 	80% {
 		filter: saturate(90%) brightness(1);
 	}
+
 	100% {
 		filter: saturate(20%) brightness(1.2);
 	}
 }
 
 @keyframes transformsA {
+
 	0% {
 		transform: translateX(-10%) translateY(-10%) rotate(10deg);
 	}
+
 	20% {
 		transform: translateX(-5%) translateY(2%) rotate(-3deg);
 	}
+
 	40% {
 		transform: translateX(4%) translateY(8%) rotate(-8deg);
 	}
+
 	60% {
 		transform: translateX(9%) translateY(-3%) rotate(4deg);
 	}
+
 	80% {
 		transform: translateX(0%) translateY(6%) rotate(1deg);
 	}
+
 	100% {
 		transform: translateX(-1%) translateY(-1%) rotate(6deg);
 	}
 }
 
 @keyframes transformsB {
+
 	0% {
 		transform: translateX(3%) translateY(-6%) rotate(-2deg);
 	}
+
 	20% {
 		transform: translateX(-8%) translateY(-4%) rotate(8deg);
 	}
+
 	40% {
 		transform: translateX(-2%) translateY(6%) rotate(-6deg);
 	}
+
 	60% {
 		transform: translateX(3%) translateY(0%) rotate(1deg);
 	}
+
 	80% {
 		transform: translateX(-7%) translateY(-3%) rotate(9deg);
 	}
+
 	100% {
 		transform: translateX(-3%) translateY(10%) rotate(-8deg);
 	}
 }
 
 @keyframes transformsC {
+
 	0% {
 		transform: translateX(8%) translateY(9%) rotate(-6deg);
 	}
+
 	20% {
 		transform: translateX(-7%) translateY(-10%) rotate(3deg);
 	}
+
 	40% {
 		transform: translateX(2%) translateY(2%) rotate(1deg);
 	}
+
 	60% {
 		transform: translateX(6%) translateY(5%) rotate(10deg);
 	}
+
 	80% {
 		transform: translateX(10%) translateY(-7%) rotate(-2deg);
 	}
+
 	100% {
 		transform: translateX(-4%) translateY(-9%) rotate(-10deg);
 	}
@@ -193,8 +231,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Variables
 --------------------------------------------- */
 :root {
-	--font-sans-serif: "Barlow", "Helvetica Neue", Helvetica, "Arimo", Arial, sans-serif;
-	--font-serif: "Libertinus", "Times New Roman", "Tinos", Times, serif;
+	--font-sans-serif: "Barlow", "Helvetica Neue", helvetica, "Arimo", arial, sans-serif;
+	--font-serif: "Libertinus", "Times New Roman", "Tinos", times, serif;
 	--margin-small: 0.3rem;
 	--margin-medium: 0.6rem;
 	--margin: 1rem;
@@ -232,6 +270,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 
 @media (prefers-color-scheme: dark) {
+
 	:root:not([data-theme]) {
 		--colour-bg-base: rgb(25, 25, 25);
 		--colour-bg-base-mid: rgb(42, 42, 42);
@@ -262,9 +301,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	font-family: var(--font-serif, serif);
 	font-weight: 400;
 	font-size: 19px;
-	background-color: var(--colour-bg-base, #ffffff);
+	background-color: var(--colour-bg-base, #fff);
 	color: var(--colour-fg-base, #191919);
-	text-rendering: optimizeLegibility;
+	text-rendering: optimizelegibility;
 	line-height: 1.4;
 }
 
@@ -281,6 +320,7 @@ body.home {
 }
 
 @media (min-width: 500px) {
+
 	body {
 		margin-left: var(--margin-large, 2.5rem);
 		margin-right: var(--margin-large, 2.5rem);
@@ -296,31 +336,31 @@ a {
 	text-underline-offset: 0.2em;
 	text-decoration-thickness: 1px;
 	text-decoration-color: var(--colour-fg-base-light, #c3c3c3);
-	color: currentColor;
+	color: currentcolor;
 }
 
 a:link {
-	color: currentColor;
+	color: currentcolor;
 }
 
 a:visited {
-	color: currentColor;
+	color: currentcolor;
 	text-decoration-color: var(--colour-fg-base-light, #dbdbdb);
 }
 
 a:hover {
-	color: currentColor;
-	text-decoration-color: var(--colour-base-blue, #0088ff);
+	color: currentcolor;
+	text-decoration-color: var(--colour-base-blue, #08f);
 }
 
 a:active {
-	color: currentColor;
-	text-decoration-color: var(--colour-base-blue, #0088ff);
+	color: currentcolor;
+	text-decoration-color: var(--colour-base-blue, #08f);
 }
 
 a:focus {
-	color: currentColor;
-	outline-color: var(--colour-base-blue, #0088ff);
+	color: currentcolor;
+	outline-color: var(--colour-base-blue, #08f);
 }
 
 abbr {
@@ -332,11 +372,11 @@ abbr:hover {
 	text-decoration-color: var(--colour-fg-base-faint, #c3c3c3);
 }
 
-input[type=text],
-input[type=search],
-input[type=password],
-input[type=url],
-input[type=email] {
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="url"],
+input[type="email"] {
 	font-family: var(--font-serif, serif);
 	font-weight: 400;
 	font-size: 0.8rem;
@@ -347,7 +387,7 @@ input[type=email] {
 	border-left-color: var(--colour-bg-base-mid-alt, #efefef);
 	border-right-color: var(--colour-bg-base-mid-alt, #efefef);
 	border-bottom-color: var(--colour-fg-base-light, #797979);
-	background-color: var(--colour-bg-base-mid, #eeeeee);
+	background-color: var(--colour-bg-base-mid, #eee);
 	color: var(--colour-fg-base, #191919);
 	padding-left: 1em;
 	padding-right: 1em;
@@ -360,8 +400,8 @@ input[type=email] {
 	line-height: 34px;
 }
 
-input[type=checkbox],
-input[type=radio] {
+input[type="checkbox"],
+input[type="radio"] {
 	margin-left: 0;
 	margin-right: 0;
 	margin-bottom: 0;
@@ -379,7 +419,7 @@ textarea {
 	border-left-color: var(--colour-bg-base-mid-alt, #efefef);
 	border-right-color: var(--colour-bg-base-mid-alt, #efefef);
 	border-bottom-color: var(--colour-fg-base, #191919);
-	background-color: var(--colour-bg-base-mid, #eeeeee);
+	background-color: var(--colour-bg-base-mid, #eee);
 	color: var(--colour-fg-base, #191919);
 	padding: 1em;
 	margin-left: 0;
@@ -389,8 +429,8 @@ textarea {
 	line-height: inherit;
 }
 
-input[type=button]:not(.stock),
-input[type=submit]:not(.stock),
+input[type="button"]:not(.stock),
+input[type="submit"]:not(.stock),
 button:not(.stock) {
 	font-family: var(--font-sans-serif, sans-serif);
 	font-size: var(--sans-serif-title-text-size, 0.7rem);
@@ -400,7 +440,7 @@ button:not(.stock) {
 	appearance: none;
 	border-radius: 0;
 	border: 1px solid var(--colour-fg-base, #191919);
-	color: var(--colour-bg-base, #ffffff);
+	color: var(--colour-bg-base, #fff);
 	background-color: var(--colour-fg-base, #191919);
 	padding-left: 1em;
 	padding-right: 1em;
@@ -445,6 +485,7 @@ button:not(.stock) {
 }
 
 @media (min-width: 800px) {
+
 	.global-main-container {
 		display: flex;
 	}
@@ -506,6 +547,7 @@ button:not(.stock) {
 }
 
 @media (min-width: 800px) {
+
 	.global-main {
 		flex-grow: 1;
 		margin-right: var(--margin-large, 2.5rem);
@@ -514,6 +556,7 @@ button:not(.stock) {
 }
 
 @media (min-width: 800px) {
+
 	.global-sidebar {
 		width: 300px;
 		flex-shrink: 0;
@@ -564,7 +607,7 @@ button:not(.stock) {
 	animation-fill-mode: both;
 	animation-iteration-count: infinite;
 	animation-play-state: running;
-	background-color: #0088ff;
+	background-color: #08f;
 	transform-origin: 50%;
 }
 
@@ -593,7 +636,7 @@ button:not(.stock) {
 }
 
 .global-logo-letter svg path {
-	fill: #ffffff;
+	fill: #fff;
 }
 
 .global-footer {
@@ -616,6 +659,7 @@ button:not(.stock) {
 }
 
 @media (min-width: 800px) {
+
 	.global-footer-links {
 		flex-direction: row;
 	}
@@ -632,29 +676,31 @@ button:not(.stock) {
 
 .global-footer-link > a,
 .global-footer-link > a:link {
-	color: currentColor;
+	color: currentcolor;
 }
 
 .global-footer-link > a:visited {
-	color: currentColor;
+	color: currentcolor;
 }
 
 .global-footer-link > a:hover {
-	color: currentColor;
+	color: currentcolor;
 }
 
 .global-footer-link > a:active {
-	color: currentColor;
+	color: currentcolor;
 }
 
 .global-footer-link > a:focus {
-	color: currentColor;
+	color: currentcolor;
 }
 
 @media (min-width: 800px) {
+
 	.global-footer-link {
 		margin-right: var(--margin, 1rem);
 	}
+
 	.global-footer-link:not(:last-of-type)::after {
 		content: "/";
 		font-family: inherit;
@@ -707,18 +753,19 @@ button:not(.stock) {
 }
 
 .article-title > a:hover {
-	text-decoration-color: var(--colour-base-blue, #0088ff);
+	text-decoration-color: var(--colour-base-blue, #08f);
 }
 
 .article-title > a:active {
-	text-decoration-color: var(--colour-base-blue, #0088ff);
+	text-decoration-color: var(--colour-base-blue, #08f);
 }
 
 .article-title > a:focus {
-	outline-color: var(--colour-base-blue, #0088ff);
+	outline-color: var(--colour-base-blue, #08f);
 }
 
 @media (min-width: 500px) {
+
 	.article-title {
 		font-size: 3.4em;
 		margin-bottom: var(--margin, 1rem);
@@ -839,7 +886,7 @@ button:not(.stock) {
 .article-content hr {
 	border: 0;
 	height: 1px;
-	background-color: currentColor;
+	background-color: currentcolor;
 	margin-top: var(--margin-large, 2.5rem);
 	margin-bottom: var(--margin-large, 2.5rem);
 }
@@ -851,7 +898,7 @@ button:not(.stock) {
 	margin-bottom: var(--margin-bigger, 2rem);
 	margin-left: 0;
 	margin-right: 0;
-	border-left: 2px solid currentColor;
+	border-left: 2px solid currentcolor;
 	font-style: italic;
 }
 
@@ -887,7 +934,7 @@ button:not(.stock) {
 	text-transform: var(--sans-serif-title-text-transform, uppercase);
 	border-width: 1px;
 	border-style: solid;
-	border-color: currentColor;
+	border-color: currentcolor;
 	padding: 0.5em;
 	text-align: left;
 	vertical-align: top;
@@ -908,7 +955,7 @@ button:not(.stock) {
 	text-transform: var(--sans-serif-title-text-transform, uppercase);
 	border-width: 1px;
 	border-style: solid;
-	border-color: currentColor;
+	border-color: currentcolor;
 	padding: 0.5em;
 	text-align: left;
 	vertical-align: top;
@@ -955,6 +1002,7 @@ button:not(.stock) {
 }
 
 @media (min-width: 500px) {
+
 	.article-content h1,
 	.article-content h2,
 	.article-content h3,
@@ -963,12 +1011,15 @@ button:not(.stock) {
 	.article-content h6 {
 		margin-bottom: var(--margin-bigger, 2rem);
 	}
+
 	.article-content h1 {
 		font-size: 1.8em;
 	}
+
 	.article-content h2 {
 		font-size: 1.8em;
 	}
+
 	.article-content ul,
 	.article-content ol {
 		padding-left: var(--margin-large, 2.5rem);
@@ -1168,7 +1219,7 @@ button:not(.stock) {
 .comment-respond {
 	padding-top: var(--margin, 1rem);
 	padding-bottom: var(--margin, 1rem);
-	background-color: var(--colour-bg-base, #ffffff);
+	background-color: var(--colour-bg-base, #fff);
 }
 
 .comment-reply-title {
@@ -1212,7 +1263,7 @@ button:not(.stock) {
 	max-width: 400px;
 }
 
-[class^=comment-form-] label {
+[class^="comment-form-"] label {
 	font-family: var(--font-sans-serif, sans-serif);
 	font-weight: 400;
 	font-size: 0.8rem;
@@ -1233,7 +1284,7 @@ button:not(.stock) {
 	margin-bottom: var(--margin, 1rem);
 }
 
-.comment-form-cookies-consent input[type=checkbox] {
+.comment-form-cookies-consent input[type="checkbox"] {
 	margin-bottom: var(--margin-small, 0.3rem);
 	margin-right: var(--margin-small, 0.3rem);
 }
@@ -1289,7 +1340,7 @@ button:not(.stock) {
 .post-navigation .nav-links .nav-next a:hover,
 .post-navigation .nav-links .nav-next a:visited,
 .post-navigation .nav-links .nav-next a:active {
-	color: currentColor;
+	color: currentcolor;
 	text-decoration: none;
 }
 
@@ -1300,25 +1351,25 @@ button:not(.stock) {
 
 .post-navigation .nav-links .nav-previous a:visited .nav-title,
 .post-navigation .nav-links .nav-next a:visited .nav-title {
-	color: currentColor;
+	color: currentcolor;
 }
 
 .post-navigation .nav-links .nav-previous a:focus .nav-title,
 .post-navigation .nav-links .nav-next a:focus .nav-title {
-	color: currentColor;
+	color: currentcolor;
 	text-decoration: underline;
 	outline-color: var(--colour-fg-base, #191919);
 }
 
 .post-navigation .nav-links .nav-previous a:hover .nav-title,
 .post-navigation .nav-links .nav-next a:hover .nav-title {
-	color: currentColor;
+	color: currentcolor;
 	text-decoration: underline;
 }
 
 .post-navigation .nav-links .nav-previous a:active .nav-title,
 .post-navigation .nav-links .nav-next a:active .nav-title {
-	color: currentColor;
+	color: currentcolor;
 }
 
 .post-navigation .nav-links .nav-previous .nav-subtitle,
@@ -1343,5 +1394,3 @@ button:not(.stock) {
 	position: static;
 	width: auto;
 }
-
-/*# sourceMappingURL=style.css.map */
