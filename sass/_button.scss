@@ -8,9 +8,9 @@ button:not(.stock) {
     letter-spacing: var(--sans-serif-title-text-letter-spacing, 0.04rem);
     appearance: none;
     border-radius: 0;
-    border: 1px solid var(--colour-fg-base-light, rgb(121, 121, 121));
+    border: 1px solid var(--colour-fg-base, rgb(25, 25, 25));
     color: var(--colour-bg-base, #ffffff);
-    background-color: var(--colour-fg-base-light, rgb(121, 121, 121));
+    background-color: var(--colour-fg-base, rgb(25, 25, 25));
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 0;
@@ -21,11 +21,3 @@ button:not(.stock) {
     margin-bottom: 0;
     line-height: 34px;
 }
-
-// @supports (-webkit-appearance: none) {
-//     input[type=button]:not(.stock),
-//     input[type=submit]:not(.stock),
-//     button:not(.stock) {
-//         -webkit-appearance: none;
-//     }
-// }

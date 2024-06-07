@@ -215,7 +215,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--hue-animation-duration: 48000ms;
 	--sans-serif-title-text-size: 0.7rem;
 	--sans-serif-title-text-weight: 400;
-	--sans-serif-title-text-color: var(--colour-fg-base-light, rgb(121, 121, 121));
+	--sans-serif-title-text-color: var(--colour-fg-base-mid, rgb(42, 42, 42));
 	--sans-serif-title-text-letter-spacing: 0.04rem;
 	--sans-serif-title-text-transform: uppercase;
 }
@@ -399,9 +399,9 @@ button:not(.stock) {
 	letter-spacing: var(--sans-serif-title-text-letter-spacing, 0.04rem);
 	appearance: none;
 	border-radius: 0;
-	border: 1px solid var(--colour-fg-base-light, #797979);
+	border: 1px solid var(--colour-fg-base, #191919);
 	color: var(--colour-bg-base, #ffffff);
-	background-color: var(--colour-fg-base-light, #797979);
+	background-color: var(--colour-fg-base, #191919);
 	padding-left: 1em;
 	padding-right: 1em;
 	padding-top: 0;
@@ -864,7 +864,7 @@ button:not(.stock) {
 	font-family: var(--font-serif, serif);
 	font-weight: 400;
 	font-size: 1rem;
-	color: var(--colour-fg-base-light, #797979);
+	color: var(--colour-fg-base-mid, #2a2a2a);
 	padding-top: var(--margin, 1rem);
 	font-style: normal;
 }
@@ -1074,7 +1074,7 @@ button:not(.stock) {
 	font-family: var(--font-sans-serif, sans-serif);
 	font-weight: 400;
 	font-size: 0.6rem;
-	opacity: 0.6;
+	color: var(--colour-fg-base-mid, #2a2a2a);
 }
 
 .article-comments-list .comment .comment-reply-link {
