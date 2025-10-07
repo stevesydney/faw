@@ -1,0 +1,55 @@
+@property --colour-base-luminosity-a {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 31%;
+}
+
+@property --colour-base-luminosity-b {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 60%;
+}
+
+@property --colour-base-luminosity-c {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 36%;
+}
+
+@keyframes luminosity-shift {
+    0% {
+        --colour-base-luminosity-a: 31%;
+        --colour-base-luminosity-b: 60%;
+        --colour-base-luminosity-c: 36%;
+    }
+    16.666% {
+        --colour-base-luminosity-a: 60%;
+        --colour-base-luminosity-b: 36%;
+        --colour-base-luminosity-c: 31%;
+    }
+    33.333% {
+        --colour-base-luminosity-a: 36%;
+        --colour-base-luminosity-b: 31%;
+        --colour-base-luminosity-c: 60%;
+    }
+    49.999% {
+        --colour-base-luminosity-a: 31%;
+        --colour-base-luminosity-b: 60%;
+        --colour-base-luminosity-c: 36%;
+    }
+    66.666% {
+        --colour-base-luminosity-a: 60%;
+        --colour-base-luminosity-b: 36%;
+        --colour-base-luminosity-c: 31%;
+    }
+    83.333% {
+        --colour-base-luminosity-a: 36%;
+        --colour-base-luminosity-b: 31%;
+        --colour-base-luminosity-c: 60%;
+    }
+    100% {
+        --colour-base-luminosity-a: 31%;
+        --colour-base-luminosity-b: 60%;
+        --colour-base-luminosity-c: 36%;
+    }
+}

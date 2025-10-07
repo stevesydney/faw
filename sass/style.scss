@@ -30,6 +30,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Keyframes
 --------------------------------------------- */
 @import "keyframes";
+@import "hue-animations";
+@import "saturation-animations";
+@import "luminosity-animations";
+@import "translate-x-animations";
+@import "translate-y-animations";
+@import "rotate-animations";
 
 /* Variables
 --------------------------------------------- */
