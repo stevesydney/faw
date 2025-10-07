@@ -34,27 +34,36 @@
     width: 82%;
     height: 47%;
     position: relative;
-    animation-delay: 0ms;
-    animation-direction: alternate;
-    animation-duration: var(--hue-animation-duration, 48000ms);
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    background-color: hsl(208, 100%, 50%);
+    animation-delay: var(--base-animation-delay);
+    animation-name: translate-x-shift, translate-y-shift, rotate-shift, hue-shift, saturation-shift, luminosity-shift;
+    animation-direction: alternate, alternate-reverse, alternate, var(--base-animation-direction), alternate, alternate-reverse;
+    animation-duration: var(--base-animation-duration);
+    animation-timing-function: var(--base-animation-timing-function);
+    animation-fill-mode: var(--base-animation-fill-mode);
+    animation-iteration-count: var(--base-animation-iteration-count);
+    animation-play-state: var(--base-animation-play-state);
     transform-origin: 50%;
+    // outline: 2px solid var(--colour-bg-base);
+}
+
+.home .global-logo-bar {
+    outline-width: 3px;
 }
 
 .global-logo-bar-1 {
-    animation-name: saturationsA, transformsA;
+    // animation-name: saturationsA, transformsA;
+    background-color: hsl(var(--colour-base-hue), var(--colour-base-saturation-a), var(--colour-base-luminosity-a));
+    transform: translateX(var(--transform-translate-x-a)) translateY(var(--transform-translate-y-a)) rotate(var(--transform-rotate-a));
 }
 
 .global-logo-bar-2 {
-    animation-name: saturationsB, transformsB;
+    background-color: hsl(var(--colour-base-hue), var(--colour-base-saturation-b), var(--colour-base-luminosity-b));
+    transform: translateX(var(--transform-translate-x-b)) translateY(var(--transform-translate-y-b)) rotate(var(--transform-rotate-b));
 }
 
 .global-logo-bar-3 {
-    animation-name: saturationsC, transformsC;
+    background-color: hsl(var(--colour-base-hue), var(--colour-base-saturation-c), var(--colour-base-luminosity-c));
+    transform: translateX(var(--transform-translate-x-c)) translateY(var(--transform-translate-y-c)) rotate(var(--transform-rotate-c));
 }
 
 .global-logo-letter {
@@ -63,10 +72,12 @@
     top: 0;
     bottom: 0;
     width: 20%;
+    display: none;
 }
 
 .global-logo-letter svg {
-    display: block;
+    //display: block;
+    display: none;
 }
 
 .global-logo-letter svg path {

@@ -1,0 +1,55 @@
+@property --transform-rotate-a {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: -10deg;
+}
+
+@property --transform-rotate-b {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 2deg;
+}
+
+@property --transform-rotate-c {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 6deg;
+}
+
+@keyframes rotate-shift {
+    0% {
+      --transform-rotate-a: -10deg;
+      --transform-rotate-b: 2deg;
+      --transform-rotate-c: 6deg;
+    }
+    16.666% {
+      --transform-rotate-a: 2deg;
+      --transform-rotate-b: 6deg;
+      --transform-rotate-c: -2deg;
+    }
+    33.333% {
+      --transform-rotate-a: -6deg;
+      --transform-rotate-b: -2deg;
+      --transform-rotate-c: 2deg;
+    }
+    49.999% {
+      --transform-rotate-a: -2deg;
+      --transform-rotate-b: -10deg;
+      --transform-rotate-c: 10deg;
+    }
+    66.666% {
+      --transform-rotate-a: 10deg;
+      --transform-rotate-b: -6deg;
+      --transform-rotate-c: -10deg;
+    }
+    83.333% {
+      --transform-rotate-a: 6deg;
+      --transform-rotate-b: 10deg;
+      --transform-rotate-c: -6deg;
+    }
+    100% {
+      --transform-rotate-a: -10deg;
+      --transform-rotate-b: 2deg;
+      --transform-rotate-c: 6deg;
+    }
+}

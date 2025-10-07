@@ -6,6 +6,15 @@
     color: var(--colour-fg-base, rgb(25, 25, 25));
     text-rendering: optimizeLegibility;
     line-height: 1.4;
+
+    animation-delay: var(--base-animation-delay);
+    animation-direction: var(--base-animation-direction);
+    animation-duration: var(--base-animation-duration);
+    animation-timing-function: var(--base-animation-timing-function);
+    animation-fill-mode: var(--base-animation-fill-mode);
+    animation-iteration-count: var(--base-animation-iteration-count);
+    animation-play-state: var(--base-animation-play-state);
+    animation-name: hue-shift;
 }
 
 // @supports (-webkit-font-smoothing: antialiased) {

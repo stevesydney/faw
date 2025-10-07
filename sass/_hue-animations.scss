@@ -1,0 +1,15 @@
+@property --colour-base-hue {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 208;
+}
+
+@keyframes hue-shift {
+    0% { --colour-base-hue: 208; }
+    16.666%   { --colour-base-hue: 330; }
+    33.333%   { --colour-base-hue: 146; }
+    49.999%  { --colour-base-hue: 208; }
+    66.666%  { --colour-base-hue: 330; }
+    83.333%  { --colour-base-hue: 146; }
+    100% { --colour-base-hue: 208; }
+}

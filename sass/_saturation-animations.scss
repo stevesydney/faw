@@ -1,0 +1,40 @@
+@property --colour-base-saturation-a {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 40%;
+}
+
+@property --colour-base-saturation-b {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 94%;
+}
+
+@property --colour-base-saturation-c {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 100%;
+}
+
+@keyframes saturation-shift {
+    0% {
+        --colour-base-saturation-a: 40%;
+        --colour-base-saturation-b: 94%;
+        --colour-base-saturation-c: 100%;
+    }
+    33.333% {
+        --colour-base-saturation-a: 100%;
+        --colour-base-saturation-b: 40%;
+        --colour-base-saturation-c: 94%;
+    }
+    66.666% {
+        --colour-base-saturation-a: 94%;
+        --colour-base-saturation-b: 100%;
+        --colour-base-saturation-c: 40%;
+    }
+    100% {
+        --colour-base-saturation-a: 40%;
+        --colour-base-saturation-b: 94%;
+        --colour-base-saturation-c: 100%;
+    }
+}

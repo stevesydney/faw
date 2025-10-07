@@ -1,0 +1,55 @@
+@property --transform-translate-x-a {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: -10%;
+}
+
+@property --transform-translate-x-b {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 2%;
+}
+
+@property --transform-translate-x-c {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 6%;
+}
+
+@keyframes translate-x-shift {
+    0% {
+      --transform-translate-x-a: -10%;
+      --transform-translate-x-b: 2%;
+      --transform-translate-x-c: 6%;
+    }
+    16.666% {
+      --transform-translate-x-a: -2%;
+      --transform-translate-x-b: -6%;
+      --transform-translate-x-c: 10%;
+    }
+    33.333% {
+      --transform-translate-x-a: 6%;
+      --transform-translate-x-b: -10%;
+      --transform-translate-x-c: -6%;
+    }
+    49.999% {
+      --transform-translate-x-a: -6%;
+      --transform-translate-x-b: 6%;
+      --transform-translate-x-c: -2%;
+    }
+    66.666% {
+      --transform-translate-x-a: 2%;
+      --transform-translate-x-b: 10%;
+      --transform-translate-x-c: -10%;
+    }
+    83.333% {
+      --transform-translate-x-a: 10%;
+      --transform-translate-x-b: -2%;
+      --transform-translate-x-c: 2%;
+    }
+    100% {
+      --transform-translate-x-a: -10%;
+      --transform-translate-x-b: 2%;
+      --transform-translate-x-c: 6%;
+    }
+}

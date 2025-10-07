@@ -16,15 +16,15 @@
     }
 
     &>a:hover {
-        text-decoration-color: var(--colour-base-blue, hsl(208, 100%, 50%));
+        text-decoration-color: var(--colour-base, hsl(208, 100%, 50%));
     }
 
     &>a:active {
-        text-decoration-color: var(--colour-base-blue, hsl(208, 100%, 50%));
+        text-decoration-color: var(--colour-base, hsl(208, 100%, 50%));
     }
 
     &>a:focus {
-        outline-color: var(--colour-base-blue, hsl(208, 100%, 50%));
+        outline-color: var(--colour-base, hsl(208, 100%, 50%));
     }
 
 }
